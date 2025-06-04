@@ -11,17 +11,14 @@
             "id": "bfadc2e5a0b67666",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "TAC/TAC Canvas.canvas",
-                "viewState": {
-                  "x": -338.62310467750297,
-                  "y": -563.8851645010515,
-                  "zoom": -1.1102230246251565e-16
-                }
+                "file": "Daily/2025-06-04.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "TAC Canvas"
+              "icon": "lucide-file",
+              "title": "2025-06-04"
             }
           },
           {
@@ -173,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TAC/TAC Canvas.canvas",
+                "file": "Daily/2025-06-04.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TAC Canvas"
+              "title": "Outline of 2025-06-04"
             }
           },
           {
@@ -213,12 +210,12 @@
   },
   "active": "bfadc2e5a0b67666",
   "lastOpenFiles": [
+    "TAC/TAC Canvas.canvas",
     "TAC/Meeting Notes/deleteme.md",
     "TAC/Recycletek/TODO.md",
     "TAC/Meeting Notes",
     "TAC/Recycletek/EcoPod.md",
     "TAC/Recycletek/EcoCenter.md",
-    "TAC/TAC Canvas.canvas",
     "Canvas/MyFirstCanvas.canvas",
     "Canvas",
     "README.md",
