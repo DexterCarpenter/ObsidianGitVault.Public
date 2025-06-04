@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "50271d64a2c432b9",
+        "id": "dad789dff8a55864",
         "type": "tabs",
         "children": [
           {
-            "id": "d006e3e3beb54cb8",
+            "id": "1d70106fd1ef3a29",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of README"
             }
           },
           {
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 336.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,13 +180,24 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d006e3e3beb54cb8",
+  "active": "b46e9bb96164f7d0",
   "lastOpenFiles": [
+    "Personal/SF Road Trip.md",
     "README.md",
+    "Daily/2025-06-04.md",
+    "Scratchpad/Excalidraw.md",
+    "TAC/Recycletek/TODO.md",
+    "Daily",
+    "Personal/deleteme.md",
+    "Attatchments/Pasted image 20250604112520.png",
+    "Attatchments",
+    "Excalidraw/Drawing 2025-06-04 11.19.13.excalidraw.md",
+    "Pasted image 20250604112207.png",
+    "Excalidraw",
+    "Scratchpad",
     "TAC/Recycletek",
     "TAC/Untitled.md",
     "TAC",
-    "Untitled.md",
     "Personal",
     "Welcome.md",
     "link 1.md"
