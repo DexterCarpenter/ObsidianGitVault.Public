@@ -1,0 +1,2 @@
+# ObsidianGitVault
+Obsidian note taking
