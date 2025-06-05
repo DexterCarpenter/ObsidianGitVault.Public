@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "TAC/Recycletek/DropDoor Xometry Quote.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "DropDoor Xometry Quote"
+            }
+          },
+          {
+            "id": "73b02ab0fabf35d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2025-06-04.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-06-04"
             }
           }
         ]
@@ -166,7 +180,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5
+    "width": 336.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,13 +196,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "423a60f2ffd7f281",
+  "active": "e7a37db8b0a4e2ad",
   "lastOpenFiles": [
+    "TAC/Recycletek/DropDoor Xometry Quote.md",
+    "Daily/2025-06-04.md",
+    "TAC/Meeting Notes/Ingredion Intro.md",
+    "README.md",
     "Scratchpad/my first tasks.md",
     "Templates/Templater.new.md",
     "Untitled.md",
-    "TAC/Meeting Notes/Ingredion Intro.md",
-    "Daily/2025-06-04.md",
     "deleteme.md",
     "deleteme.md",
     "Scratchpad/Untitled.md",
@@ -200,7 +217,6 @@
     "TAC/Recycletek/EcoCenter.md",
     "Canvas/MyFirstCanvas.canvas",
     "Canvas",
-    "README.md",
     "Personal/SF Road Trip.md",
     "2025-06-04.md",
     "Daily",
