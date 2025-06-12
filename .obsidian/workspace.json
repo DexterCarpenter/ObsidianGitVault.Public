@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2025-06-11.md",
+                "file": "TAC/Installing TwinCAT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-11"
+              "title": "Installing TwinCAT"
             }
           }
         ]
@@ -183,8 +183,9 @@
   },
   "active": "73b02ab0fabf35d7",
   "lastOpenFiles": [
-    "Daily/2025-06-09.md",
     "Daily/2025-06-11.md",
+    "TAC/Installing TwinCAT.md",
+    "Daily/2025-06-09.md",
     "TAC/Recycletek/TODO.md",
     "TAC/Recycletek/DropDoor Xometry Quote.md",
     "Daily/2025-06-04.md",
@@ -220,7 +221,6 @@
     "Excalidraw",
     "Scratchpad",
     "TAC/Recycletek",
-    "TAC/Untitled.md",
     "TAC",
     "Personal",
     "Welcome.md",
