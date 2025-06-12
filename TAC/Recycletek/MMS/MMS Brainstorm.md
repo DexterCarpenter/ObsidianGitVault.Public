@@ -13,6 +13,7 @@ starting/stopping conveyors as needed
 
 components have setconfig() method (not a property)
 
+![[Excalidraw EMMS.excalidraw.png]]
 ### Questions for Yoni
 - Bailer
 	- Can we get more clarification on make and model?
