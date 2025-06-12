@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "MMS Brainstorm"
             }
+          },
+          {
+            "id": "73cb8fcdc7e72a6c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "TAC/Recycletek/MMS/System Architecture.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "System Architecture"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -182,11 +195,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "73b02ab0fabf35d7",
+  "active": "423a60f2ffd7f281",
   "lastOpenFiles": [
+    "TAC/Recycletek/MMS/MMS Brainstorm.md",
+    "TAC/Recycletek/MMS/System Architecture.md",
     "Attatchments/Excalidraw EMMS.excalidraw.png",
     "Daily/2025-06-11.md",
-    "TAC/Recycletek/MMS/MMS Brainstorm.md",
     "TAC/Recycletek/MMS",
     "Daily/2025-06-09.md",
     "TAC/SPT v4 Learning.md",
