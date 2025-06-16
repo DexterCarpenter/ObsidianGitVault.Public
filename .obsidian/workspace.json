@@ -33,8 +33,7 @@
               "title": "SPT v4 Learning"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,10 +195,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7c7fa499fba6354d",
+  "active": "73cb8fcdc7e72a6c",
   "lastOpenFiles": [
-    "TAC/Recycletek/MMS/System Architecture.md",
     "TAC/SPT v4 Learning.md",
+    "TAC/Recycletek/MMS/System Architecture.md",
     "TAC/Recycletek/MMS/MMS Brainstorm.md",
     "Attatchments/Excalidraw EMMS.excalidraw.png",
     "Daily/2025-06-11.md",
