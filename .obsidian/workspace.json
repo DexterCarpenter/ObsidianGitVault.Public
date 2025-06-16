@@ -179,8 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5,
-    "collapsed": true
+    "width": 360.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,10 +194,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "423a60f2ffd7f281",
+  "active": "91b6ba5322168303",
   "lastOpenFiles": [
-    "TAC/Recycletek/MMS/MMS Brainstorm.md",
     "TAC/Recycletek/MMS/System Architecture.md",
+    "TAC/Recycletek/MMS/MMS Brainstorm.md",
     "Attatchments/Excalidraw EMMS.excalidraw.png",
     "Daily/2025-06-11.md",
     "TAC/Recycletek/MMS",
