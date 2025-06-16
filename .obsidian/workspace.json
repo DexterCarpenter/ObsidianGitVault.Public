@@ -179,8 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5,
-    "collapsed": true
+    "width": 360.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,7 +194,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "73cb8fcdc7e72a6c",
+  "active": "b46e9bb96164f7d0",
   "lastOpenFiles": [
     "TAC/SPT v4 Learning.md",
     "TAC/Recycletek/MMS/System Architecture.md",
