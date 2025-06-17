@@ -90,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5,
-    "collapsed": true
+    "width": 275.5
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -179,7 +178,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 360.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,10 +194,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1eba39556bbfcc73",
+  "active": "73cb8fcdc7e72a6c",
   "lastOpenFiles": [
-    "TAC/SPT v4 Learning.md",
     "TAC/Recycletek/MMS/System Architecture.md",
+    "TAC/SPT v4 Learning.md",
     "TAC/Recycletek/MMS/MMS Brainstorm.md",
     "Attatchments/Excalidraw EMMS.excalidraw.png",
     "Daily/2025-06-11.md",
