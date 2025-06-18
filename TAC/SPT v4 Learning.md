@@ -12,3 +12,5 @@ SPT v4 Breaking Changes:
 https://beckhoff-usa-community.github.io/SPT-Libraries/V4%20Release%20Notes/BreakingChanges.html
 
 Update this Library: `Tc3_PackML_V2` =>`Tc3_PackML_V3`
+
+[TCBSD Manual](https://download.beckhoff.com/download/Document/ipc/embedded-pc/embedded-pc-cx/TwinCAT_BSD_en.pdf)

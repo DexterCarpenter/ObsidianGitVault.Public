@@ -13,10 +13,10 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "TAC/Recycletek/MMS/System Architecture.md"
+                "file": "TAC/Recycletek/MMS/MMS System Architecture.md"
               },
               "icon": "excalidraw-icon",
-              "title": "System Architecture"
+              "title": "MMS System Architecture"
             }
           },
           {
@@ -211,8 +211,8 @@
   },
   "active": "530575276e616966",
   "lastOpenFiles": [
-    "TAC/Recycletek/MMS/System Architecture.md",
     "TAC/SPT v4 Learning.md",
+    "TAC/Recycletek/MMS/MMS System Architecture.md",
     "Attatchments/Pasted Image 20250617141533_106.png",
     "Attatchments/Pasted Image 20250617134000_180.png",
     "Daily/2025-06-17.md",
