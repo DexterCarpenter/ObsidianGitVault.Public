@@ -61,8 +61,7 @@
               "title": "2025-06-17"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -208,7 +207,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 360.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,11 +223,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "873ff77a36e764d8",
+  "active": "530575276e616966",
   "lastOpenFiles": [
-    "TAC/SPT v4 Learning.md",
-    "Daily/2025-06-17.md",
     "Daily/2025-06-23.md",
+    "Daily/2025-06-17.md",
+    "TAC/SPT v4 Learning.md",
     "TAC/Recycletek/MMS/MMS System Architecture.md",
     "conflict-files-obsidian-git.md",
     "Attatchments/Pasted Image 20250617141533_106.png",
