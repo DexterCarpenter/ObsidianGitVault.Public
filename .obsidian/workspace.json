@@ -18,8 +18,21 @@
               "icon": "excalidraw-icon",
               "title": "MMS System Architecture"
             }
+          },
+          {
+            "id": "a143ecce9416cd21",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "TAC/Recycletek/MMS/MMS HMI Design.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "MMS HMI Design"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -76,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5
+    "width": 275.5,
+    "collapsed": true
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -164,7 +178,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 360.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,10 +194,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "530575276e616966",
+  "active": "a143ecce9416cd21",
   "lastOpenFiles": [
-    "Daily/2025-06-30.md",
+    "Attatchments/TAC Logo.svg",
     "TAC/Recycletek/MMS/MMS System Architecture.md",
+    "TAC/Recycletek/MMS/MMS HMI Design.md",
+    "Daily/2025-06-30.md",
     "Daily/2025-06-23.md",
     "TAC/SPT v4 Learning.md",
     "Daily/2025-06-17.md",
@@ -213,8 +230,6 @@
     "Templates/Templater.new.md",
     "Untitled.md",
     "deleteme.md",
-    "deleteme.md",
-    "Scratchpad/Untitled.md",
     "Templates",
     "TAC/TAC Canvas.canvas",
     "TAC/Meeting Notes",
