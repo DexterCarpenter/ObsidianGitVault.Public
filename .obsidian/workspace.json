@@ -11,12 +11,14 @@
             "id": "530575276e616966",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "TAC/Recycletek/MMS/MMS System Architecture.md"
+                "file": "Daily/2025-06-30.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "MMS System Architecture"
+              "icon": "lucide-file",
+              "title": "2025-06-30"
             }
           },
           {
@@ -225,6 +227,7 @@
   "active": "530575276e616966",
   "lastOpenFiles": [
     "TAC/Recycletek/MMS/MMS System Architecture.md",
+    "Daily/2025-06-30.md",
     "TAC/SPT v4 Learning.md",
     "Attatchments/Pasted Image 20250623153724_929.png",
     "Daily/2025-06-23.md",
