@@ -11,12 +11,14 @@
             "id": "530575276e616966",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "TAC/Recycletek/MMS/MMS System Architecture.md"
+                "file": "Daily/2025-07-01.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "MMS System Architecture"
+              "icon": "lucide-file",
+              "title": "2025-07-01"
             }
           },
           {
@@ -31,8 +33,7 @@
               "title": "MMS HMI Design"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,11 +195,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2cf95755658e30c4",
+  "active": "530575276e616966",
   "lastOpenFiles": [
-    "Attatchments/TAC Logo.svg",
     "TAC/Recycletek/MMS/MMS System Architecture.md",
+    "Daily/2025-07-01.md",
     "TAC/Recycletek/MMS/MMS HMI Design.md",
+    "Attatchments/TAC Logo.svg",
     "Daily/2025-06-30.md",
     "Daily/2025-06-23.md",
     "TAC/SPT v4 Learning.md",
