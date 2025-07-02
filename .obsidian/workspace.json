@@ -45,7 +45,8 @@
               "title": "MMS HMI Design"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5
+    "width": 275.5,
+    "collapsed": true
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -206,10 +208,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "52aa7959f332b502",
+  "active": "530575276e616966",
   "lastOpenFiles": [
-    "TAC/Recycletek/MMS/MMS System Architecture.md",
     "Daily/2025-07-01.md",
+    "TAC/Recycletek/MMS/MMS System Architecture.md",
     "TAC/Recycletek/MMS/MMS HMI Design.md",
     "Attatchments/TAC Logo.svg",
     "Daily/2025-06-30.md",
