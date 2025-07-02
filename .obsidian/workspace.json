@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "530575276e616966",
+            "id": "52aa7959f332b502",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,6 +19,18 @@
               },
               "icon": "lucide-file",
               "title": "2025-07-01"
+            }
+          },
+          {
+            "id": "530575276e616966",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "TAC/Recycletek/MMS/MMS System Architecture.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "MMS System Architecture"
             }
           },
           {
@@ -90,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5,
-    "collapsed": true
+    "width": 275.5
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -195,7 +206,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "530575276e616966",
+  "active": "52aa7959f332b502",
   "lastOpenFiles": [
     "TAC/Recycletek/MMS/MMS System Architecture.md",
     "Daily/2025-07-01.md",
