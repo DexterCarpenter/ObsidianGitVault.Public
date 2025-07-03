@@ -25,12 +25,12 @@
             "id": "530575276e616966",
             "type": "leaf",
             "state": {
-              "type": "excalidraw-loading",
+              "type": "excalidraw",
               "state": {
                 "file": "TAC/Recycletek/MMS/MMS System Architecture.md"
               },
-              "icon": "lucide-file",
-              "title": "Loading Excalidraw... MMS System Architecture"
+              "icon": "excalidraw-icon",
+              "title": "MMS System Architecture"
             }
           },
           {
@@ -210,8 +210,8 @@
   },
   "active": "530575276e616966",
   "lastOpenFiles": [
-    "Daily/2025-07-01.md",
     "TAC/Recycletek/MMS/MMS System Architecture.md",
+    "Daily/2025-07-01.md",
     "TAC/Recycletek/MMS/MMS HMI Design.md",
     "Attatchments/TAC Logo.svg",
     "Daily/2025-06-30.md",
