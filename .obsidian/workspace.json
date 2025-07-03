@@ -25,12 +25,12 @@
             "id": "530575276e616966",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "excalidraw-loading",
               "state": {
                 "file": "TAC/Recycletek/MMS/MMS System Architecture.md"
               },
-              "icon": "excalidraw-icon",
-              "title": "MMS System Architecture"
+              "icon": "lucide-file",
+              "title": "Loading Excalidraw... MMS System Architecture"
             }
           },
           {
