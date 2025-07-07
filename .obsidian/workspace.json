@@ -4,49 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "f7c2971124e8d061",
+        "id": "a5eb3bbd50592480",
         "type": "tabs",
         "children": [
           {
-            "id": "52aa7959f332b502",
+            "id": "bdd73b9987d45472",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily/2025-07-01.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2025-07-01"
-            }
-          },
-          {
-            "id": "530575276e616966",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "TAC/Recycletek/MMS/MMS System Architecture.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "MMS System Architecture"
-            }
-          },
-          {
-            "id": "a143ecce9416cd21",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "TAC/Recycletek/MMS/MMS HMI Design.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "MMS HMI Design"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -208,11 +179,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "530575276e616966",
+  "active": "bdd73b9987d45472",
   "lastOpenFiles": [
+    "TAC/Recycletek/MMS/MMS HMI Design.md",
     "TAC/Recycletek/MMS/MMS System Architecture.md",
     "Daily/2025-07-01.md",
-    "TAC/Recycletek/MMS/MMS HMI Design.md",
     "Attatchments/TAC Logo.svg",
     "Daily/2025-06-30.md",
     "Daily/2025-06-23.md",
