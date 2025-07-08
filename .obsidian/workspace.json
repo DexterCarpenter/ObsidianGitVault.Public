@@ -11,12 +11,14 @@
             "id": "bdd73b9987d45472",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "TAC/Recycletek/MMS/MMS System Architecture.md"
+                "file": "TAC/TC Events Workflow.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "MMS System Architecture"
+              "icon": "lucide-file",
+              "title": "TC Events Workflow"
             }
           }
         ]
@@ -76,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5,
-    "collapsed": true
+    "width": 275.5
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -183,8 +184,10 @@
   },
   "active": "bdd73b9987d45472",
   "lastOpenFiles": [
-    "TAC/Recycletek/MMS/MMS HMI Design.md",
+    "TAC/TCBSD Install Information.md",
+    "TAC/TC Events Workflow.md",
     "TAC/Recycletek/MMS/MMS System Architecture.md",
+    "TAC/Recycletek/MMS/MMS HMI Design.md",
     "Daily/2025-07-01.md",
     "Attatchments/TAC Logo.svg",
     "Daily/2025-06-30.md",
@@ -216,8 +219,6 @@
     "README.md",
     "Scratchpad/my first tasks.md",
     "Templates/Templater.new.md",
-    "Untitled.md",
-    "deleteme.md",
     "Templates",
     "TAC/TAC Canvas.canvas",
     "TAC/Meeting Notes",
