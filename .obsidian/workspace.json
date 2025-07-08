@@ -11,10 +11,12 @@
             "id": "bdd73b9987d45472",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "TAC/Recycletek/MMS/MMS System Architecture.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "MMS System Architecture"
             }
           }
         ]
