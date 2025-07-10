@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TAC/Recycletek/MMS/Events Checklist.md",
+                "file": "TAC/TC Events Workflow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Events Checklist"
+              "title": "TC Events Workflow"
             }
           }
         ]
@@ -167,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5,
-    "collapsed": true
+    "width": 360.5
   },
   "left-ribbon": {
     "hiddenItems": {

@@ -17,3 +17,6 @@ You must obtain the package from the **testing feed**!!
 	1) Select TMC-File
 5) If already added to Project Solution, TwinCAT will automatically detect change to TMC-File and prompt you via popup to update the EventClass
 
+Useful Video:
+TwinCAT 3 - Mastering the Event Logger
+https://www.youtube.com/watch?v=Kex2vtqS8ic
