@@ -30,3 +30,17 @@ jobs:
         run: |
           git remote add public https://x-access-token:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
           git push public public-split:main --force
+
+    #   - name: Push to destination repository
+    #     run: |
+    #       git config --global user.email "${{ secrets.USER_EMAIL }}"
+    #       git config --global user.name "DexterCarpenter"
+    #       git clone https://${{ env.ORG_NAME }}:${{ secrets.GH_PUBLIC_PAT }}@github.com/${{ env.ORG_NAME }}/destination-repo.git
+    #       cd destination-repo
+    #       git remote add ${{ env.ORIGINAL_REPO_NAME }} https://${{ env.ORG_NAME }}:${{ secrets.PAT }}@github.com/${{ env.ORG_NAME }}/${{ env.ORIGINAL_REPO_NAME }}.git
+    #       git remote update
+    #       git merge ${{ env.ORIGINAL_REPO_NAME }}/main
+    #       git push origin main
+    #   - name: Split the PublicPublish folder
+    #     run: |
+    #       git subtree split --prefix=PublicPublish -b public-split
