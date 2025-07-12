@@ -3,6 +3,7 @@ name: Sync Public Folder to Public Repo
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:  # allows manual triggering
 
 jobs:
   sync-public:
@@ -12,9 +13,9 @@ jobs:
       - name: Checkout full repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Needed for subtree
+          fetch-depth: 0  # full history needed for subtree
 
-      - name: Set up Git identity
+      - name: Configure Git
         run: |
           git config user.name "GitHub Action"
           git config user.email "actions@github.com"
@@ -23,7 +24,9 @@ jobs:
         run: |
           git subtree split --prefix=PublicPublish -b public-split
 
-      - name: Push to public repo
+      - name: Push to public repo using PAT
+        env:
+          GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
-            git remote add public https://x-access-token:${{ secrets.GH_PUBLIC_PAT }}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
-            git push public public-split:main --force
+          git remote add public https://x-access-token:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
+          git push public public-split:main --force
