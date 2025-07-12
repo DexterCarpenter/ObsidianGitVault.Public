@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "cc3388ef082b07ca",
+        "id": "db7741e580442679",
         "type": "tabs",
         "children": [
           {
-            "id": "1692b632754eef82",
+            "id": "e7a37db8b0a4e2ad",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "TAC/TwinCAT Visualization Learning.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Daily/2025-07-12.md",
+                "bFile": "Daily/2025-07-12.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "TwinCAT Visualization Learning"
+              "icon": "diff",
+              "title": "Diff: 2025-07-12"
+            }
+          },
+          {
+            "id": "2cae3550ae14a0b6",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "Daily/2025-07-12.md",
+                "bFile": "Daily/2025-07-12.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: 2025-07-12"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -95,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -114,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "Scratchpad/my first tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from my first tasks"
             }
           },
           {
@@ -167,8 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5,
-    "collapsed": true
+    "width": 336.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,55 +196,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1692b632754eef82",
+  "active": "2cae3550ae14a0b6",
   "lastOpenFiles": [
+    "Daily/2025-07-12.md",
+    "PublicPublish/README.md",
+    "Public Publish/README.md",
+    "PublicPublish",
+    "Public Publish",
+    "Public Publish",
+    "Personal/SFO Road Trip.md",
+    "TAC/TwinCAT Visualization Learning.md",
+    "TAC/TCBSD Install Information.md",
+    "TAC/TC Events Workflow.md",
+    "TAC/Recycletek/MMS/MMS HMI Design.md",
+    "TAC/Recycletek/MMS/Events Checklist.md",
+    "Daily/2025-07-10.md",
+    "Daily/2025-07-09.md",
+    "Daily/2025-07-01.md",
+    "Daily/2025-06-30.md",
+    "Daily/2025-06-23.md",
+    "Attatchments/image001.png",
+    "Attatchments/TAC Logo.svg",
     "Attatchments/Pasted image 20250711103242.png",
     "Attatchments/Pasted image 20250711103219.png",
     "Attatchments/Pasted image 20250711103107.png",
     "Attatchments/Pasted image 20250711103039.png",
-    "TAC/TC Events Workflow.md",
-    "TAC/TwinCAT Visualization Learning.md",
-    "TAC/Recycletek/MMS/Events Checklist.md",
-    "Daily/2025-07-10.md",
-    "Daily/2025-07-09.md",
-    "Attatchments/image001.png",
-    "TAC/TCBSD Install Information.md",
-    "TAC/Recycletek/MMS/MMS System Architecture.md",
-    "TAC/Recycletek/MMS/MMS HMI Design.md",
-    "Daily/2025-07-01.md",
-    "Attatchments/TAC Logo.svg",
-    "Daily/2025-06-30.md",
-    "Daily/2025-06-23.md",
-    "TAC/SPT v4 Learning.md",
-    "Daily/2025-06-17.md",
     "Attatchments/Pasted Image 20250623153724_929.png",
-    "conflict-files-obsidian-git.md",
+    "TAC/SPT v4 Learning.md",
+    "TAC/Recycletek/MMS/MMS System Architecture.md",
+    "TAC/Recycletek/MMS/MMS Brainstorm.md",
+    "TAC/Recycletek/MMS",
+    "TAC/Meeting Notes/Beckhoff Vision Sizing Meeting.md",
+    "TAC/Meeting Notes/BeRobox Meeting - Ingredion.md",
+    "Daily/2025-06-17.md",
+    "Daily/2025-06-11.md",
+    "Daily/2025-06-09.md",
     "Attatchments/Pasted Image 20250617141533_106.png",
     "Attatchments/Pasted Image 20250617134000_180.png",
-    "TAC/Recycletek/MMS/MMS Brainstorm.md",
     "Attatchments/Excalidraw EMMS.excalidraw.png",
-    "Daily/2025-06-11.md",
-    "TAC/Recycletek/MMS",
-    "Daily/2025-06-09.md",
-    "TAC/Recycletek/TODO.md",
-    "TAC/Recycletek/EcoPod.md",
-    "TAC/Recycletek/EcoCenter.md",
-    "TAC/Meeting Notes/Beckhoff Vision Sizing Meeting.md",
-    "TAC/Installing TwinCAT.md",
-    "TAC/Recycletek/DropDoor Xometry Quote.md",
-    "Daily/2025-06-04.md",
-    "TAC/Meeting Notes/BeRobox Meeting - Ingredion.md",
-    "Attatchments/Pasted image 20250605192550.png",
+    "Personal/().md",
+    "Scratchpad/Excalidraw.md",
+    "Scratchpad/my first tasks.md",
+    "Canvas/MyFirstCanvas.canvas",
     "Templates",
     "TAC/TAC Canvas.canvas",
     "TAC/Meeting Notes",
-    "Canvas/MyFirstCanvas.canvas",
     "Canvas",
     "Daily",
     "Attatchments",
-    "Excalidraw",
-    "Scratchpad",
-    "TAC/Recycletek",
-    "TAC"
+    "Excalidraw"
   ]
 }
