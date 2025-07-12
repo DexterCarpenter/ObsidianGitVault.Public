@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "db7741e580442679",
+        "id": "8312608853585da5",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a37db8b0a4e2ad",
+            "id": "82a8b0c1648f668f",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Daily/2025-07-12.md",
-                "bFile": "Daily/2025-07-12.md",
-                "aRef": ""
+                "file": "PublicPublish/Test note.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: 2025-07-12"
-            }
-          },
-          {
-            "id": "2cae3550ae14a0b6",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Daily/2025-07-12.md",
-                "bFile": "Daily/2025-07-12.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: 2025-07-12"
+              "icon": "lucide-file",
+              "title": "Test note"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,8 +181,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2cae3550ae14a0b6",
+  "active": "82a8b0c1648f668f",
   "lastOpenFiles": [
+    "PublicPublish/Test note.md",
+    "New folder",
     "Daily/2025-07-12.md",
     "PublicPublish/README.md",
     "Public Publish/README.md",
@@ -243,7 +230,6 @@
     "TAC/Meeting Notes",
     "Canvas",
     "Daily",
-    "Attatchments",
-    "Excalidraw"
+    "Attatchments"
   ]
 }
