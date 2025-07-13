@@ -5,9 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:  # allows manual triggering
 
-permissions: 
-  contents: write
-  actions: write
+# permissions: 
+#   contents: write
+#   actions: write
 
 jobs:
   sync-public:
@@ -23,8 +23,6 @@ jobs:
         run: |
            git config --global user.name "GitHub Action"
            git config --global user.email "actions@github.com"
-#          git config user.name "DexterCarpenter"
-#          git config user.email "dexter.carpenter03@gmail.com"
         
       - name: Split the PublicPublish folder
         run: |
@@ -38,18 +36,3 @@ jobs:
             xargs -L1 git config --unset-all
           git remote add public https://DexterCarpenter:${{ secrets.GH_PUBLIC_PAT }}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
           git push public public-split:main --force
-#          git remote add public https://x-access-token:${{ secrets.GH_PUBLIC_PAT }}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
-
-    #   - name: Push to destination repository
-    #     run: |
-    #       git config --global user.email "${{ secrets.USER_EMAIL }}"
-    #       git config --global user.name "DexterCarpenter"
-    #       git clone https://${{ env.ORG_NAME }}:${{ secrets.GH_PUBLIC_PAT }}@github.com/${{ env.ORG_NAME }}/destination-repo.git
-    #       cd destination-repo
-    #       git remote add ${{ env.ORIGINAL_REPO_NAME }} https://${{ env.ORG_NAME }}:${{ secrets.PAT }}@github.com/${{ env.ORG_NAME }}/${{ env.ORIGINAL_REPO_NAME }}.git
-    #       git remote update
-    #       git merge ${{ env.ORIGINAL_REPO_NAME }}/main
-    #       git push origin main
-    #   - name: Split the PublicPublish folder
-    #     run: |
-    #       git subtree split --prefix=PublicPublish -b public-split
