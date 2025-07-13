@@ -73,7 +73,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
-          # Fix for extraHeader issue (critical)
           git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
             xargs -L1 git config --unset-all
 
