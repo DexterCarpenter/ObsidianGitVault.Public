@@ -100,12 +100,3 @@ You should see the folder contents reflected in your public repository.
 ### Important Notes
 - The **public repo must have GitHub Actions disabled** to avoid recursive sync loops or workflow security issues.
 - This setup **forces** the push from private to public, overwriting the `main` branch of the public repo each time.
-
-### Summary
-
-| **Task**                               | **Tool / Setting**                 |
-| ---------------------------------- | ------------------------------ |
-| Export subfolder from private repo | `git subtree split`            |
-| Push to public repo                | GitHub Actions + PAT           |
-| Fix GitHub authentication override | Remove `extraheader` manually  |
-| Keep it one-way sync               | Disable Actions in public repo |
