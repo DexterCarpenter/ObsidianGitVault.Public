@@ -34,6 +34,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
+          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
+            xargs -L1 git config --unset-all
           git remote add public https://DexterCarpenter:${{ secrets.GH_PUBLIC_PAT }}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
           git push public public-split:main --force
 #          git remote add public https://x-access-token:${{ secrets.GH_PUBLIC_PAT }}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
