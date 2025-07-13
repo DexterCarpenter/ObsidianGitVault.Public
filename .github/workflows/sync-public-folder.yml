@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:  # allows manual triggering
 
+permissions: 
+  contents: write
+
 jobs:
   sync-public:
     runs-on: ubuntu-latest
