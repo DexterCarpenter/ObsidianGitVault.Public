@@ -34,7 +34,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
-          git remote add public https://x-access-token:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
+          git remote add public https://x-access-token:${{ secrets.GH_PUBLIC_PAT }}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
           git push public public-split:main --force
 
     #   - name: Push to destination repository
