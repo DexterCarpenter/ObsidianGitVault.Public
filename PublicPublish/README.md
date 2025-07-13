@@ -1,4 +1,4 @@
-# My Publicly Published Obsidian Branch
+# My Publicly Published Obsidian Repo
 
 Public notes from my personal Obsidian Vault.
 
