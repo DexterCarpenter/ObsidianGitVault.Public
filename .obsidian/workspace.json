@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PublicPublish/Test note.md",
+                "file": "PublicPublish/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Test note"
+              "title": "README"
             }
           },
           {
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2025-07-12.md",
+                "file": "PublicPublish/Test note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-12"
+              "title": "Test note"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,12 +196,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "727b091bee98df6a",
+  "active": "82a8b0c1648f668f",
   "lastOpenFiles": [
     "Daily/2025-07-12.md",
+    "PublicPublish/README.md",
     "PublicPublish/Test note.md",
     "New folder",
-    "PublicPublish/README.md",
     "Public Publish/README.md",
     "PublicPublish",
     "Public Publish",
