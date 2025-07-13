@@ -35,8 +35,7 @@
               "title": "2025-07-12"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,10 +195,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "82a8b0c1648f668f",
+  "active": "727b091bee98df6a",
   "lastOpenFiles": [
-    "PublicPublish/Test note.md",
     "Daily/2025-07-12.md",
+    "PublicPublish/Test note.md",
     "New folder",
     "PublicPublish/README.md",
     "Public Publish/README.md",
