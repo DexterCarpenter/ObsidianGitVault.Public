@@ -7,6 +7,7 @@ on:
 
 permissions: 
   contents: write
+  actions: write
 
 jobs:
   sync-public:
@@ -20,10 +21,10 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "DexterCarpenter"
-          git config user.email "dexter.carpenter03@gmail.com"
-#          git config user.name "GitHub Action"
-#          git config user.email "actions@github.com"
+           git config user.name "GitHub Action"
+           git config user.email "actions@github.com"
+#          git config user.name "DexterCarpenter"
+#          git config user.email "dexter.carpenter03@gmail.com"
         
       - name: Split the PublicPublish folder
         run: |
@@ -33,7 +34,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
-          git remote add public https://x-access-token:${{ secrets.GH_PUBLIC_PAT }}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
+          git remote add public https://x-access-token:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
           git push public public-split:main --force
 
     #   - name: Push to destination repository
