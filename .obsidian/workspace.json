@@ -11,10 +11,14 @@
             "id": "36956e46d0afd78b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "TAC/Documentation/TwinCAT Visualization Learning.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "TwinCAT Visualization Learning"
             }
           }
         ]
@@ -179,6 +183,11 @@
   },
   "active": "36956e46d0afd78b",
   "lastOpenFiles": [
+    "TAC/Documentation/TCBSD Install Information.md",
+    "TAC/Documentation/TC Events Workflow.md",
+    "TAC/Documentation/SPT v4 Learning.md",
+    "TAC/Documentation/TwinCAT Visualization Learning.md",
+    "TAC/Documentation",
     "Untitled.md",
     "PublicPublish/README.md",
     "_Resources",
@@ -195,9 +204,6 @@
     "PublicPublish",
     "Public Publish",
     "Public Publish",
-    "TAC/TwinCAT Visualization Learning.md",
-    "TAC/TCBSD Install Information.md",
-    "TAC/TC Events Workflow.md",
     "TAC/Recycletek/MMS/MMS HMI Design.md",
     "TAC/Recycletek/MMS/Events Checklist.md",
     "Daily/2025-07-10.md",
@@ -212,20 +218,17 @@
     "_Resources/Attatchments/Pasted image 20250711103107.png",
     "_Resources/Attatchments/Pasted image 20250711103039.png",
     "_Resources/Attatchments/Pasted Image 20250623153724_929.png",
-    "TAC/SPT v4 Learning.md",
     "TAC/Recycletek/MMS/MMS System Architecture.md",
     "TAC/Recycletek/MMS/MMS Brainstorm.md",
     "TAC/Recycletek/MMS",
     "TAC/Meeting Notes/Beckhoff Vision Sizing Meeting.md",
     "TAC/Meeting Notes/BeRobox Meeting - Ingredion.md",
-    "Daily/2025-06-17.md",
     "_Resources/Attatchments/Pasted Image 20250617141533_106.png",
     "_Resources/Attatchments/Pasted Image 20250617134000_180.png",
     "_Resources/Attatchments/Excalidraw EMMS.excalidraw.png",
     "_Resources/Canvas/MyFirstCanvas.canvas",
     "_Resources/Templates",
     "TAC/TAC Canvas.canvas",
-    "TAC/Meeting Notes",
-    "_Resources/Canvas"
+    "TAC/Meeting Notes"
   ]
 }
