@@ -1,3 +1,3 @@
 # ObsidianGitVault
 
-Welcome to my GitHub Repo for all my Obsidian note taking!
+My private GitHub repo for all my Obsidian note taking.

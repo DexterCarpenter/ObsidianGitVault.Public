@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PublicPublish/README.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,8 +183,8 @@
   },
   "active": "82a8b0c1648f668f",
   "lastOpenFiles": [
-    "PublicPublish/Test note.md",
     "PublicPublish/README.md",
+    "PublicPublish/Test note.md",
     "Daily/2025-07-12.md",
     "New folder",
     "Public Publish/README.md",
