@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f9f9f43683240de5",
+        "id": "8312608853585da5",
         "type": "tabs",
         "children": [
           {
-            "id": "8582c901318c4c86",
+            "id": "82a8b0c1648f668f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Personal/Thanksgiving NYC 2025.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Thanksgiving NYC 2025"
+              "title": "README"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5
+    "width": 300
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "Scratchpad/my first tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from my first tasks"
             }
           },
           {
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5,
-    "collapsed": true
+    "width": 336.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,55 +181,55 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8582c901318c4c86",
+  "active": "82a8b0c1648f668f",
   "lastOpenFiles": [
-    "Personal/Thanksgiving NYC 2025.md",
-    "TAC/TwinCAT Visualization Learning.md",
     "PublicPublish/README.md",
-    "PublicPublish",
+    "PublicPublish/Templates.Public/Templater.new.md",
+    "Templates/Templater.new.md",
+    "Personal/SFO Road Trip.md",
+    "PublicPublish/Templates.Public",
+    "README.md",
+    "Personal/Thanksgiving NYC 2025.md",
+    "PublicPublish/Test note.md",
     "Daily/2025-07-12.md",
+    "New folder",
+    "Public Publish/README.md",
+    "PublicPublish",
+    "Public Publish",
+    "Public Publish",
+    "TAC/TwinCAT Visualization Learning.md",
+    "TAC/TCBSD Install Information.md",
+    "TAC/TC Events Workflow.md",
+    "TAC/Recycletek/MMS/MMS HMI Design.md",
+    "TAC/Recycletek/MMS/Events Checklist.md",
+    "Daily/2025-07-10.md",
+    "Daily/2025-07-09.md",
+    "Daily/2025-07-01.md",
+    "Daily/2025-06-30.md",
+    "Daily/2025-06-23.md",
+    "Attatchments/image001.png",
+    "Attatchments/TAC Logo.svg",
     "Attatchments/Pasted image 20250711103242.png",
     "Attatchments/Pasted image 20250711103219.png",
     "Attatchments/Pasted image 20250711103107.png",
     "Attatchments/Pasted image 20250711103039.png",
-    "TAC/TC Events Workflow.md",
-    "TAC/Recycletek/MMS/Events Checklist.md",
-    "Daily/2025-07-10.md",
-    "Daily/2025-07-09.md",
-    "Attatchments/image001.png",
-    "TAC/TCBSD Install Information.md",
-    "TAC/Recycletek/MMS/MMS System Architecture.md",
-    "TAC/Recycletek/MMS/MMS HMI Design.md",
-    "Daily/2025-07-01.md",
-    "Attatchments/TAC Logo.svg",
-    "Daily/2025-06-30.md",
-    "Daily/2025-06-23.md",
-    "TAC/SPT v4 Learning.md",
-    "Daily/2025-06-17.md",
     "Attatchments/Pasted Image 20250623153724_929.png",
-    "conflict-files-obsidian-git.md",
+    "TAC/SPT v4 Learning.md",
+    "TAC/Recycletek/MMS/MMS System Architecture.md",
+    "TAC/Recycletek/MMS/MMS Brainstorm.md",
+    "TAC/Recycletek/MMS",
+    "TAC/Meeting Notes/Beckhoff Vision Sizing Meeting.md",
+    "TAC/Meeting Notes/BeRobox Meeting - Ingredion.md",
+    "Daily/2025-06-17.md",
+    "Daily/2025-06-11.md",
     "Attatchments/Pasted Image 20250617141533_106.png",
     "Attatchments/Pasted Image 20250617134000_180.png",
-    "TAC/Recycletek/MMS/MMS Brainstorm.md",
     "Attatchments/Excalidraw EMMS.excalidraw.png",
-    "Daily/2025-06-11.md",
-    "TAC/Recycletek/MMS",
-    "Daily/2025-06-09.md",
-    "TAC/Recycletek/TODO.md",
-    "TAC/Recycletek/EcoPod.md",
-    "TAC/Recycletek/EcoCenter.md",
-    "TAC/Meeting Notes/Beckhoff Vision Sizing Meeting.md",
-    "TAC/Installing TwinCAT.md",
-    "TAC/Recycletek/DropDoor Xometry Quote.md",
+    "Canvas/MyFirstCanvas.canvas",
     "Templates",
     "TAC/TAC Canvas.canvas",
     "TAC/Meeting Notes",
-    "Canvas/MyFirstCanvas.canvas",
     "Canvas",
-    "Daily",
-    "Attatchments",
-    "Excalidraw",
-    "Scratchpad",
-    "TAC/Recycletek"
+    "Daily"
   ]
 }
