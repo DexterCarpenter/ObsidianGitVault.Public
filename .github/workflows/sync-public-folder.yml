@@ -21,8 +21,8 @@ jobs:
 
       - name: Configure Git
         run: |
-           git config user.name "GitHub Action"
-           git config user.email "actions@github.com"
+           git config --global user.name "GitHub Action"
+           git config --global user.email "actions@github.com"
 #          git config user.name "DexterCarpenter"
 #          git config user.email "dexter.carpenter03@gmail.com"
         
@@ -34,7 +34,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
-          git remote add public https://DexterCarpenter:$GH_TOKEN@github.com/DexterCarpenter/ObsidianGitVault.Public.git
+          git remote add public https://DexterCarpenter:${{ secrets.GH_PUBLIC_PAT }}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
           git push public public-split:main --force
 #          git remote add public https://x-access-token:${{ secrets.GH_PUBLIC_PAT }}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
 
