@@ -75,8 +75,7 @@ jobs:
         run: |
           git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
             xargs -L1 git config --unset-all
-
-          git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
+          git remote add public https://your-username:${GH_TOKEN}@github.com/your-username/your-repo.git
           git push public public-split:main --force
 ```
 
