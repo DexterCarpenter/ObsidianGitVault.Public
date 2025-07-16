@@ -167,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5,
-    "collapsed": true
+    "width": 360.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,7 +182,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "15ba6d7e645a0f3c",
+  "active": "b46e9bb96164f7d0",
   "lastOpenFiles": [
     "Daily/2025-07-15.md",
     "Personal/Thanksgiving NYC 2025.md",
