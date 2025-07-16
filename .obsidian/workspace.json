@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2025-07-15.md",
+                "file": "Daily/2025-07-16.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-15"
+              "title": "2025-07-16"
             }
           }
         ]
@@ -182,9 +182,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b46e9bb96164f7d0",
+  "active": "15ba6d7e645a0f3c",
   "lastOpenFiles": [
     "Daily/2025-07-15.md",
+    "Daily/2025-07-16.md",
     "Personal/Thanksgiving NYC 2025.md",
     "conflict-files-obsidian-git.md",
     "_Resources/Templates/Templater.new.md",
@@ -228,7 +229,6 @@
     "Daily/2025-06-23.md",
     "TAC/SPT v4 Learning.md",
     "Daily/2025-06-17.md",
-    "TAC/Recycletek/MMS/MMS Brainstorm.md",
     "TAC/Recycletek/MMS",
     "Templates",
     "TAC/TAC Canvas.canvas",
