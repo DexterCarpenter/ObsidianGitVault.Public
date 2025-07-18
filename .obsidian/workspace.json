@@ -25,12 +25,14 @@
             "id": "ee423bbac044f158",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "TAC/TEC/Pump Project/TEC HMI Layout.md"
+                "file": "TAC/Documentation/Installing XAR 4026.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "TEC HMI Layout"
+              "icon": "lucide-file",
+              "title": "Installing XAR 4026"
             }
           }
         ],
@@ -91,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5,
-    "collapsed": true
+    "width": 275.5
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -199,6 +200,7 @@
   "active": "ee423bbac044f158",
   "lastOpenFiles": [
     "TAC/TEC/Pump Project/TEC HMI Layout.md",
+    "TAC/Documentation/Installing XAR 4026.md",
     "TAC/TEC/Pump Project/TEC Pump Project Initial Notes.md",
     "_Resources/Attatchments/TAC Logo.svg",
     "Personal/Thanksgiving NYC 2025.md",
