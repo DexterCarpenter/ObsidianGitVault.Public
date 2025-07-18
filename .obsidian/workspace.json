@@ -91,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5
+    "width": 275.5,
+    "collapsed": true
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -197,8 +198,8 @@
   },
   "active": "ee423bbac044f158",
   "lastOpenFiles": [
-    "TAC/TEC/Pump Project/TEC Pump Project Initial Notes.md",
     "TAC/TEC/Pump Project/TEC HMI Layout.md",
+    "TAC/TEC/Pump Project/TEC Pump Project Initial Notes.md",
     "_Resources/Attatchments/TAC Logo.svg",
     "Personal/Thanksgiving NYC 2025.md",
     "_Resources/Attatchments/image001.png",
