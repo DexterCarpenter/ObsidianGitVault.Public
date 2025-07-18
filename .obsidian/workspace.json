@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2025-07-16.md",
+                "file": "TAC/TEC/Pump Project/TEC Pump Project Initial Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-16"
+              "title": "TEC Pump Project Initial Notes"
+            }
+          },
+          {
+            "id": "ee423bbac044f158",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "TAC/TEC/Pump Project/TEC HMI Layout.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "TEC HMI Layout"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5,
-    "collapsed": true
+    "width": 275.5
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -167,7 +179,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 360.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,11 +195,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "15ba6d7e645a0f3c",
+  "active": "ee423bbac044f158",
   "lastOpenFiles": [
-    "Daily/2025-07-15.md",
-    "Daily/2025-07-16.md",
+    "TAC/TEC/Pump Project/TEC Pump Project Initial Notes.md",
+    "TAC/TEC/Pump Project/TEC HMI Layout.md",
+    "_Resources/Attatchments/TAC Logo.svg",
     "Personal/Thanksgiving NYC 2025.md",
+    "_Resources/Attatchments/image001.png",
+    "_Resources/Attatchments/Excalidraw EMMS.excalidraw.png",
+    "Daily/2025-07-16.md",
+    "TAC/TEC/Pump Project",
+    "TAC/TEC",
+    "Daily/2025-07-15.md",
     "conflict-files-obsidian-git.md",
     "_Resources/Templates/Templater.new.md",
     "_Resources/Templates",
@@ -194,8 +214,6 @@
     "_Resources/Excalidraw",
     "_Resources/Canvas/MyFirstCanvas.canvas",
     "_Resources/Canvas",
-    "_Resources/Attatchments/image001.png",
-    "_Resources/Attatchments/TAC Logo.svg",
     "_Resources/Attatchments/Pasted image 20250711103242.png",
     "_Resources/Attatchments/Pasted image 20250711103219.png",
     "_Resources/Attatchments/Pasted image 20250711103107.png",
@@ -203,7 +221,6 @@
     "_Resources/Attatchments/Pasted image 20250605192550.png",
     "_Resources/Attatchments/Pasted Image 20250623153724_929.png",
     "_Resources/Attatchments/Pasted Image 20250617141533_106.png",
-    "_Resources/Attatchments/Pasted Image 20250617134000_180.png",
     "_Resources/Attatchments",
     "_Resources",
     "TAC/Documentation/TwinCAT Visualization Learning.md",
@@ -226,11 +243,6 @@
     "TAC/Recycletek/MMS/MMS HMI Design.md",
     "Daily/2025-07-01.md",
     "Daily/2025-06-30.md",
-    "Daily/2025-06-23.md",
-    "TAC/SPT v4 Learning.md",
-    "Daily/2025-06-17.md",
-    "TAC/Recycletek/MMS",
-    "Templates",
     "TAC/TAC Canvas.canvas",
     "Canvas/MyFirstCanvas.canvas"
   ]

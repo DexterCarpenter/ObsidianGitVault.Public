@@ -1,7 +1,5 @@
 ###### 2025-07-13
 ---
-FORWARD: [[TEC Pump Project Initial Notes]]
-
 ## TEC HMI Project
 motor 1/2 tripped (MCP) 
 motor 1/2 running/not running
