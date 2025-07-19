@@ -20,11 +20,11 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "actions@github.com"
 
-      - name: Add public remote
-        env:
-          GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
-        run: |
-          git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
+  #    - name: Add public remote
+  #      env:
+  #        GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
+  #      run: |
+  #        git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
 
       - name: Sync all .Public folders with history
         env:
@@ -64,11 +64,12 @@ jobs:
               git branch -D split-$clean_path
             fi
           done
-          
+
+          cd /tmp/publicrepo
+
           git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
             xargs -L1 git config --unset-all
 
-          cd /tmp/publicrepo
           git add .
           git commit -m "Sync all .Public folders with history" || echo "No changes to commit"
           git push https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git main --force
