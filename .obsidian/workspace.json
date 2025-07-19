@@ -11,14 +11,10 @@
             "id": "57078eb7e599e17e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "testnote.public.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "testnote.public"
+              "title": "New tab"
             }
           }
         ]
@@ -189,12 +185,12 @@
     "Parent/Folder",
     "Parent/Child.Public/dot public test note.md",
     "Parent/Child.Public",
-    "TAC/Documentation/TwinCAT Visualization Learning.md",
+    "TAC/Documentation.Public/TwinCAT Visualization Learning.md",
     "Parent",
-    "TAC/Documentation/TCBSD Install Information.md",
-    "TAC/Documentation/TC Events Workflow.md",
-    "TAC/Documentation/SPT v4 Learning.md",
-    "TAC/Documentation/Installing XAR 4026.md",
+    "TAC/Documentation.Public/TCBSD Install Information.md",
+    "TAC/Documentation.Public/TC Events Workflow.md",
+    "TAC/Documentation.Public/SPT v4 Learning.md",
+    "TAC/Documentation.Public/Installing XAR 4026.md",
     "TAC/TEC/Pump Project/TEC Pump Project Initial Notes.md",
     "TAC/TEC/Pump Project/TEC HMI Layout.md",
     "TAC/TEC/Pump Project",
@@ -207,7 +203,7 @@
     "Personal/SFO Road Trip.md",
     "_.Public/README.md",
     "TAC/TAC Canvas.canvas",
-    "TAC/Documentation",
+    "TAC/Documentation.Public",
     "_Resources",
     "README.md",
     "_.Public/Templates/Templater.new.md",
