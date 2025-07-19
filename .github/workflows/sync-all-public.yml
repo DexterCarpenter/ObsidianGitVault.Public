@@ -64,6 +64,9 @@ jobs:
               git branch -D split-$clean_path
             fi
           done
+          
+          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
+            xargs -L1 git config --unset-all
 
           cd /tmp/publicrepo
           git add .
