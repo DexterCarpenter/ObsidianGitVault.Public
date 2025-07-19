@@ -11,10 +11,14 @@
             "id": "57078eb7e599e17e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "test.Public/testpublic.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "testpublic"
             }
           }
         ]
@@ -179,6 +183,9 @@
   },
   "active": "57078eb7e599e17e",
   "lastOpenFiles": [
+    "_.Public/README.md",
+    "test.Public/testpublic.md",
+    "test.Public",
     "Parent/Folder/Also not public.md",
     "testnote.public.md",
     "Parent/Not Public.md",
@@ -201,7 +208,6 @@
     "Attatchments/Pasted image 20250718163826.png",
     "Attatchments",
     "Personal/SFO Road Trip.md",
-    "_.Public/README.md",
     "TAC/TAC Canvas.canvas",
     "TAC/Documentation.Public",
     "_Resources",
@@ -212,11 +218,9 @@
     "Personal/Thanksgiving NYC 2025.md",
     "PublicPublish/Test note.md",
     "Daily/2025-07-12.md",
-    "New folder",
     "Public Publish/README.md",
     "TAC/Recycletek/MMS/MMS HMI Design.md",
     "TAC/Recycletek/MMS/Events Checklist.md",
-    "Daily/2025-07-10.md",
     "_Resources/Attatchments/image001.png",
     "_Resources/Attatchments/TAC Logo.svg",
     "_Resources/Attatchments/Pasted image 20250711103242.png",

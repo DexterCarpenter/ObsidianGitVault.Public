@@ -61,6 +61,16 @@ jobs:
         run: |
           git subtree split --prefix=PublicExportRoot -b public-split
 
+      - name: Move _.Public/README.md to root
+        run: |
+          git checkout public-split
+          if [ -f "_.Public/README.md" ]; then
+            mv _.Public/README.md README.md
+            git add README.md
+            git rm _.Public/README.md
+            git commit -m "Move README from _.Public to root for public view"
+          fi
+
       - name: Push to public repo using PAT
         env:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
