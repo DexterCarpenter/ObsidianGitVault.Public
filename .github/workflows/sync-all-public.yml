@@ -20,64 +20,54 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "actions@github.com"
 
-      - name: Initialize empty public branch
-        run: |
-          git checkout --orphan public-merged
-          git rm -rf . > /dev/null 2>&1 || true
-          git commit --allow-empty -m "Initialize public branch"
-
-      - name: Find .Public folders
-        id: find-folders
-        run: |
-          mkdir split-branches
-          find . -type d -name '*.Public' | sed 's|^\./||' > folders.txt
-          cat folders.txt
-
-      - name: Split and merge all folders into public-merged
-        run: |
-          set -e
-
-          for folder in $(cat folders.txt); do
-            clean_folder="${folder}"
-            branch_name="split-$(echo "$clean_folder" | tr '/.' '_')"
-
-            echo "Processing $clean_folder -> $branch_name"
-
-            git subtree split --prefix="$clean_folder" -b "$branch_name"
-
-            git checkout public-merged
-
-            if [[ "$clean_folder" == "root.Public" ]]; then
-              # Temporarily check out split branch to get its contents
-              git checkout "$branch_name"
-              mkdir ../root-temp
-              cp -r . ../root-temp/
-              git checkout public-merged
-              cp -r ../root-temp/* .
-              rm -rf ../root-temp
-              git add .
-              git commit -m "Merge root.Public contents to root" || echo "Nothing to commit for root.Public"
-            else
-              # Merge into subfolder with full history
-              git merge --allow-unrelated-histories --no-commit "$branch_name"
-              mkdir -p "$clean_folder"
-              git ls-tree --name-only "$branch_name" | while read file; do
-                if [ -e "$file" ]; then
-                  mkdir -p "$(dirname "$clean_folder/$file")"
-                  git mv "$file" "$clean_folder/$file"
-                fi
-              done
-              git commit -m "Merge $clean_folder with history"
-            fi
-
-            git branch -D "$branch_name"
-          done
-
-      - name: Push to public repo using PAT
+      - name: Add public remote
         env:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
-          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
-            xargs -L1 git config --unset-all
           git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
-          git push public public-merged:main --force
+
+      - name: Sync all .Public folders with history
+        env:
+          GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
+        run: |
+          set -e
+          # Clean up public remote if exists
+          git remote remove public || true
+          git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
+
+          # Prepare a temp directory for the public repo
+          mkdir /tmp/publicrepo
+          cd /tmp/publicrepo
+          git init
+          git checkout --orphan main
+          cd -
+
+          # Find all .Public folders
+          mapfile -t public_dirs < <(find . -type d -name '*.Public')
+
+          for dir in "${public_dirs[@]}"; do
+            clean_path="${dir#./}"
+            if [[ "$clean_path" == "root.Public" ]]; then
+              # Special case: root.Public goes to root of public repo
+              git subtree split --prefix=$clean_path -b split-root-public
+              cd /tmp/publicrepo
+              git pull --allow-unrelated-histories --squash ../.. split-root-public
+              cd -
+              git branch -D split-root-public
+            else
+              # All other .Public folders go to their respective paths
+              git subtree split --prefix=$clean_path -b split-$clean_path
+              cd /tmp/publicrepo
+              mkdir -p "$clean_path"
+              git pull --allow-unrelated-histories --squash ../.. split-$clean_path
+              cd -
+              git branch -D split-$clean_path
+            fi
+          done
+
+          cd /tmp/publicrepo
+          git add .
+          git commit -m "Sync all .Public folders with history" || echo "No changes to commit"
+          git push https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git main --force
+
+      
