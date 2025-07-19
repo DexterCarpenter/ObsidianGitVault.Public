@@ -181,9 +181,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "57078eb7e599e17e",
+  "active": "423a60f2ffd7f281",
   "lastOpenFiles": [
-    "_.Public/README.md",
+    "root.Public/README.md",
     "README.md",
     "test.Public/testpublic.md",
     "test.Public",
@@ -212,9 +212,9 @@
     "TAC/TAC Canvas.canvas",
     "TAC/Documentation.Public",
     "_Resources",
-    "_.Public/Templates/Templater.new.md",
+    "root.Public/Templates/Templater.new.md",
     "_Resources/Templates/Templater.new.md",
-    "_.Public/Templates",
+    "root.Public/Templates",
     "Personal/Thanksgiving NYC 2025.md",
     "PublicPublish/Test note.md",
     "Daily/2025-07-12.md",

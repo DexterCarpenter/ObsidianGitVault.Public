@@ -1,0 +1,74 @@
+name: Sync All .Public Folders with History
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  sync-public:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@github.com"
+
+      - name: Initialize empty public branch
+        run: |
+          git checkout --orphan public-merged
+          git rm -rf . > /dev/null 2>&1 || true
+          git commit --allow-empty -m "Initialize public branch"
+
+      - name: Find .Public folders
+        id: find-folders
+        run: |
+          mkdir split-branches
+          find . -type d -name '*.Public' | sed 's|^\./||' > folders.txt
+          cat folders.txt
+
+      - name: Split and merge all folders into public-merged
+        run: |
+          set -e
+
+          for folder in $(cat folders.txt); do
+            clean_folder="${folder}"
+            branch_name="split-$(echo "$clean_folder" | tr '/.' '_')"
+
+            echo "Processing $clean_folder -> $branch_name"
+
+            git subtree split --prefix="$clean_folder" -b "$branch_name"
+
+            if [[ "$clean_folder" == "root.Public" ]]; then
+              # Merge contents directly into root
+              git checkout public-merged
+              git read-tree --prefix=tmp-root/ -u "$branch_name"
+              mkdir -p tmp-merge
+              rsync -a tmp-root/ ./tmp-merge/
+              rm -rf tmp-root
+              git add .
+              git commit -m "Merge root.Public contents to root"
+            else
+              # Merge into subfolder
+              git checkout public-merged
+              git read-tree --prefix="$clean_folder/" -u "$branch_name"
+              git commit -m "Merge $clean_folder preserving history"
+            fi
+
+            git branch -D "$branch_name"
+          done
+
+      - name: Push public-merged to public repo
+        env:
+          GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
+        run: |
+          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
+            xargs -L1 git config --unset-all
+          git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
+          git push public public-merged:main --force
