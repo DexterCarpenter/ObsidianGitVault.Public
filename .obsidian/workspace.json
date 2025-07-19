@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Parent/Child.Public/dot public test note.md",
+                "file": "testnote.public.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dot public test note"
+              "title": "testnote.public"
             }
           }
         ]
@@ -181,11 +181,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "423a60f2ffd7f281",
+  "active": "57078eb7e599e17e",
   "lastOpenFiles": [
+    "Parent/Folder/Also not public.md",
+    "testnote.public.md",
+    "Parent/Not Public.md",
+    "Parent/Folder",
+    "Parent/Child.Public/dot public test note.md",
     "Parent/Child.Public",
     "TAC/Documentation/TwinCAT Visualization Learning.md",
-    "Parent/Child.Public/dot public test note.md",
     "Parent",
     "TAC/Documentation/TCBSD Install Information.md",
     "TAC/Documentation/TC Events Workflow.md",
@@ -204,7 +208,6 @@
     "_.Public/README.md",
     "TAC/TAC Canvas.canvas",
     "TAC/Documentation",
-    "Untitled.md",
     "_Resources",
     "README.md",
     "_.Public/Templates/Templater.new.md",
@@ -215,12 +218,9 @@
     "Daily/2025-07-12.md",
     "New folder",
     "Public Publish/README.md",
-    "_.Public",
-    "Public Publish",
     "TAC/Recycletek/MMS/MMS HMI Design.md",
     "TAC/Recycletek/MMS/Events Checklist.md",
     "Daily/2025-07-10.md",
-    "Daily/2025-07-09.md",
     "_Resources/Attatchments/image001.png",
     "_Resources/Attatchments/TAC Logo.svg",
     "_Resources/Attatchments/Pasted image 20250711103242.png",
