@@ -33,15 +33,19 @@ jobs:
           # Remove all files from the temporary branch
           git rm -rf . || true
           
-          # Copy each .Public folder to maintain directory structure
+          # Copy contents of each .Public folder to maintain directory structure
           while IFS= read -r folder; do
             if [ -d "$folder" ]; then
               echo "Processing: $folder"
+              # Get the parent directory path (e.g., "TAC/Documentation" from "TAC/Documentation.Public")
+              parent_dir=$(dirname "$folder")
+              # Get the folder name without .Public (e.g., "Documentation" from "Documentation.Public")
+              folder_name=$(basename "$folder" .Public)
               # Create the target directory structure
-              target_dir=$(dirname "$folder")
-              mkdir -p "$target_dir"
-              # Copy the .Public folder contents to maintain structure
-              cp -r "$folder" "$target_dir/"
+              target_path="$parent_dir/$folder_name"
+              mkdir -p "$parent_dir"
+              # Copy the contents of the .Public folder to the target path
+              cp -r "$folder"/* "$target_path/" 2>/dev/null || echo "No contents in $folder"
             fi
           done < public_folders.txt
           
