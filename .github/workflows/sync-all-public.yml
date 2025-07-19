@@ -31,6 +31,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
           set -e
+
           # Clean up public remote if exists
           git remote remove public || true
           git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
@@ -47,26 +48,24 @@ jobs:
 
           for dir in "${public_dirs[@]}"; do
             clean_path="${dir#./}"
+            branch_name="split-$(echo $clean_path | tr '/' '-')"
+            git subtree split --prefix="$clean_path" -b "$branch_name"
+
             if [[ "$clean_path" == "root.Public" ]]; then
-              # Special case: root.Public goes to root of public repo
-              git subtree split --prefix=$clean_path -b split-root-public
-              cd /tmp/publicrepo
-              git pull --allow-unrelated-histories --squash ../.. split-root-public
-              cd -
-              git branch -D split-root-public
+              # Export root.Public to root of publicrepo
+              git archive "$branch_name" | tar -x -C /tmp/publicrepo
             else
-              # All other .Public folders go to their respective paths
-              git subtree split --prefix=$clean_path -b split-$clean_path
-              cd /tmp/publicrepo
-              mkdir -p "$clean_path"
-              git pull --allow-unrelated-histories --squash ../.. split-$clean_path
-              cd -
-              git branch -D split-$clean_path
+              # Export other .Public folders to their respective paths
+              mkdir -p "/tmp/publicrepo/$clean_path"
+              git archive "$branch_name" | tar -x -C "/tmp/publicrepo/$clean_path"
             fi
+
+            git branch -D "$branch_name"
           done
 
           cd /tmp/publicrepo
 
+          # Unset any extra headers for clean push
           git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
             xargs -L1 git config --unset-all
 
