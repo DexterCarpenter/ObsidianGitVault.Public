@@ -20,37 +20,39 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "actions@github.com"
 
-  #    - name: Add public remote
-  #      env:
-  #        GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
-  #      run: |
-  #        git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
-
-      - name: Sync all .Public folders with history
+      - name: Add public remote
         env:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
-          set -e
-
-          # Clean up public remote if exists
-          git remote remove public || true
           git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
 
-          # Prepare a temp directory for the public repo
+      - name: Find all .Public folders
+        id: find_public
+        run: |
+          find . -type d -name '*.Public' > public_dirs.txt
+          cat public_dirs.txt
+
+      - name: Split .Public folders into branches
+        id: split_branches
+        run: |
+          while read dir; do
+            clean_path="${dir#./}"
+            branch_name="split-$(echo $clean_path | tr '/' '-')"
+            git subtree split --prefix="$clean_path" -b "$branch_name"
+            echo "$branch_name $clean_path" >> split_branches.txt
+          done < public_dirs.txt
+          cat split_branches.txt
+
+      - name: Prepare temp public repo
+        run: |
           mkdir /tmp/publicrepo
           cd /tmp/publicrepo
           git init
           git checkout --orphan main
-          cd -
 
-          # Find all .Public folders
-          mapfile -t public_dirs < <(find . -type d -name '*.Public')
-
-          for dir in "${public_dirs[@]}"; do
-            clean_path="${dir#./}"
-            branch_name="split-$(echo $clean_path | tr '/' '-')"
-            git subtree split --prefix="$clean_path" -b "$branch_name"
-
+      - name: Export .Public folders to temp repo
+        run: |
+          while read branch_name clean_path; do
             if [[ "$clean_path" == "root.Public" ]]; then
               # Export root.Public to root of publicrepo
               git archive "$branch_name" | tar -x -C /tmp/publicrepo
@@ -59,16 +61,16 @@ jobs:
               mkdir -p "/tmp/publicrepo/$clean_path"
               git archive "$branch_name" | tar --strip-components=1 -x -C "/tmp/publicrepo/$clean_path"
             fi
-
             git branch -D "$branch_name"
-          done
+          done < split_branches.txt
 
+      - name: Commit and push to public repo
+        env:
+          GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
+        run: |
           cd /tmp/publicrepo
-
-          # Unset any extra headers for clean push
-          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
-            xargs -L1 git config --unset-all
-
+          git config --global user.name "GitHub Action"
+          git config --global user.email "actions@github.com"
           git add .
           git commit -m "Sync all .Public folders with history" || echo "No changes to commit"
           git push https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git main --force
