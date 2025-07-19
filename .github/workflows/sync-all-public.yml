@@ -45,26 +45,35 @@ jobs:
 
             git subtree split --prefix="$clean_folder" -b "$branch_name"
 
+            git checkout public-merged
+
             if [[ "$clean_folder" == "root.Public" ]]; then
-              # Merge contents directly into root
+              # Temporarily check out split branch to get its contents
+              git checkout "$branch_name"
+              mkdir ../root-temp
+              cp -r . ../root-temp/
               git checkout public-merged
-              git read-tree --prefix=tmp-root/ -u "$branch_name"
-              mkdir -p tmp-merge
-              rsync -a tmp-root/ ./tmp-merge/
-              rm -rf tmp-root
+              cp -r ../root-temp/* .
+              rm -rf ../root-temp
               git add .
-              git commit -m "Merge root.Public contents to root"
+              git commit -m "Merge root.Public contents to root" || echo "Nothing to commit for root.Public"
             else
-              # Merge into subfolder
-              git checkout public-merged
-              git read-tree --prefix="$clean_folder/" -u "$branch_name"
-              git commit -m "Merge $clean_folder preserving history"
+              # Merge into subfolder with full history
+              git merge --allow-unrelated-histories --no-commit "$branch_name"
+              mkdir -p "$clean_folder"
+              git ls-tree --name-only "$branch_name" | while read file; do
+                if [ -e "$file" ]; then
+                  mkdir -p "$(dirname "$clean_folder/$file")"
+                  git mv "$file" "$clean_folder/$file"
+                fi
+              done
+              git commit -m "Merge $clean_folder with history"
             fi
 
             git branch -D "$branch_name"
           done
 
-      - name: Push public-merged to public repo
+      - name: Push to public repo using PAT
         env:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
