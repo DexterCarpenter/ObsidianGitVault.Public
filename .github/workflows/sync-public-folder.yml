@@ -28,10 +28,12 @@ jobs:
 
       - name: Split & Push each public folder
         if: steps.find-folders.outputs.folders != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
-          GH_TOKEN="${{ secrets.GH_PUBLIC_PAT }}"
-          REMOTE_URL="https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git"
-          git remote add public "$REMOTE_URL"
+          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
+             xargs -L1 git config --unset-all
+          git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
           for F in $(cat public-folders.txt); do
             BRANCH="public-split-$(echo $F | tr '/.' '--')"
             git branch -D "$BRANCH" || echo "no existing branch $BRANCH"
