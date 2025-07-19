@@ -20,59 +20,52 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "actions@github.com"
 
-      - name: Add public remote
-        env:
-          GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
+      - name: Find and prepare all .Public folders
         run: |
-          git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
-
-      - name: Find all .Public folders
-        id: find_public
-        run: |
-          find . -type d -name '*.Public' > public_dirs.txt
-          cat public_dirs.txt
-
-      - name: Split .Public folders into branches
-        id: split_branches
-        run: |
-          while read dir; do
-            clean_path="${dir#./}"
-            branch_name="split-$(echo $clean_path | tr '/' '-')"
-            git subtree split --prefix="$clean_path" -b "$branch_name"
-            echo "$branch_name $clean_path" >> split_branches.txt
-          done < public_dirs.txt
-          cat split_branches.txt
-
-      - name: Prepare temp public repo
-        run: |
-          mkdir /tmp/publicrepo
-          cd /tmp/publicrepo
-          git init
-          git checkout --orphan main
-
-      - name: Export .Public folders to temp repo
-        run: |
-          while read branch_name clean_path; do
-            if [[ "$clean_path" == "root.Public" ]]; then
-              # Export root.Public to root of publicrepo
-              git archive "$branch_name" | tar -x -C /tmp/publicrepo
-            else
-              # Export other .Public folders to their respective paths, stripping the top-level folder
-              mkdir -p "/tmp/publicrepo/$clean_path"
-              git archive "$branch_name" | tar --strip-components=1 -x -C "/tmp/publicrepo/$clean_path"
+          # Find all directories ending with .Public
+          find . -type d -name "*.Public" | sort > public_folders.txt
+          echo "Found .Public folders:"
+          cat public_folders.txt
+          
+          # Create a temporary branch for the public content
+          git checkout -b public-content
+          
+          # Remove all files from the temporary branch
+          git rm -rf . || true
+          
+          # Copy each .Public folder to maintain directory structure
+          while IFS= read -r folder; do
+            if [ -d "$folder" ]; then
+              echo "Processing: $folder"
+              # Create the target directory structure
+              target_dir=$(dirname "$folder")
+              mkdir -p "$target_dir"
+              # Copy the .Public folder contents to maintain structure
+              cp -r "$folder" "$target_dir/"
             fi
-            git branch -D "$branch_name"
-          done < split_branches.txt
+          done < public_folders.txt
+          
+          # Add all changes
+          git add -A
+          
+          # Commit the public content
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Sync all .Public folders - $(date)"
+          fi
 
-      - name: Commit and push to public repo
+      - name: Push to public repo using PAT
         env:
           GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
         run: |
-          cd /tmp/publicrepo
-          git config --global user.name "GitHub Action"
-          git config --global user.email "actions@github.com"
-          git add .
-          git commit -m "Sync all .Public folders with history" || echo "No changes to commit"
-          git push https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git main --force
-
+          # Clear any existing git config that might interfere
+          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
+            xargs -L1 git config --unset-all || true
+          
+          # Add remote for public repo
+          git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
+          
+          # Push the public-content branch to main on the public repo
+          git push public public-content:main --force
       
