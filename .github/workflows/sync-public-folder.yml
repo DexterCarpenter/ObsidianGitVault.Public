@@ -1,4 +1,4 @@
-name: Sync Public Folder to Public Repo
+name: Sync .Public Folders to Public Repo
 
 on:
   push:
@@ -19,42 +19,57 @@ jobs:
         run: |
            git config --global user.name "GitHub Action"
            git config --global user.email "actions@github.com"
-      
-      - name: Find .Public folders
-        id: find-folders
-        run: |
-          find . -type d -name '*.Public' | sed 's|^\./||' > public-folders.txt
-          echo "::set-output name=folders::$(paste -sd ',' public-folders.txt)"
 
-      - name: Split & Push each public folder
-        if: steps.find-folders.outputs.folders != ''
-        env:
-          GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
+      - name: Prepare combined public folder
         run: |
-          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
-             xargs -L1 git config --unset-all
-          git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
-          for F in $(cat public-folders.txt); do
-            BRANCH="public-split-$(echo $F | tr '/.' '--')"
-            git branch -D "$BRANCH" || echo "no existing branch $BRANCH"
-            git subtree split --prefix="$F" -b "$BRANCH"
-            git push public "$BRANCH:main" --force
-            git branch -D "$BRANCH"
+          mkdir PublicExportRoot
+
+          # Find and copy each *.Public folder into PublicExportRoot, preserving full path
+          find . -type d -name '*.Public' | while read dir; do
+            clean_path=$(echo "$dir" | sed 's|^\./||')
+            mkdir -p "$(dirname "PublicExportRoot/$clean_path")"
+            cp -r "$clean_path" "PublicExportRoot/$clean_path"
           done
 
-      # - name: Split the PublicPublish folder
-      #   run: |
-      #     git subtree split --prefix=PublicPublish -b public-split
+          # Commit PublicExportRoot as a subtree
+          git add PublicExportRoot
+          git commit -m "Prepare export of public folders" || echo "No changes to commit"
 
-      # - name: Push to public repo using PAT
+      # - name: Find .Public folders
+      #   id: find-folders
+      #   run: |
+      #     find . -type d -name '*.Public' | sed 's|^\./||' > public-folders.txt
+      #     echo "::set-output name=folders::$(paste -sd ',' public-folders.txt)"
+
+      # - name: Split & Push each public folder
+      #   if: steps.find-folders.outputs.folders != ''
       #   env:
       #     GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
       #   run: |
       #     git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
-      #       xargs -L1 git config --unset-all
+      #        xargs -L1 git config --unset-all
       #     git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
-      #     git push public public-split:main --force
+      #     for F in $(cat public-folders.txt); do
+      #       BRANCH="public-split-$(echo $F | tr '/.' '--')"
+      #       git branch -D "$BRANCH" || echo "no existing branch $BRANCH"
+      #       git subtree split --prefix="$F" -b "$BRANCH"
+      #       git push public "$BRANCH:main" --force
+      #       git branch -D "$BRANCH"
+      #     done
 
-      - name: Cleanup remote
-        if: always()
-        run: git remote remove public || true
+      - name: Split the PublicPublish folder
+        run: |
+          git subtree split --prefix=PublicExportRoot -b public-split
+
+      - name: Push to public repo using PAT
+        env:
+          GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
+        run: |
+          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
+            xargs -L1 git config --unset-all
+          git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
+          git push public public-split:main --force
+
+      # - name: Cleanup remote
+      #   if: always()
+      #   run: git remote remove public || true
