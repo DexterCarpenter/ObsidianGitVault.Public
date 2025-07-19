@@ -1,7 +1,0 @@
-{
-	"nodes":[
-		{"id":"20c5c5b85fcc5bfe","type":"file","file":"README.md","x":80,"y":-560,"width":400,"height":400},
-		{"id":"c482bb971de16d97","type":"text","text":"hello world!","x":-320,"y":-390,"width":250,"height":60}
-	],
-	"edges":[]
-}
