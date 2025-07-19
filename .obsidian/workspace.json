@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test.Public/dot public test note.md",
+                "file": "TestPublic/dot public test note.md",
                 "mode": "source",
                 "source": false
               },
@@ -184,8 +184,8 @@
   "active": "423a60f2ffd7f281",
   "lastOpenFiles": [
     "TAC/Documentation/TwinCAT Visualization Learning.md",
-    "Test.Public/dot public test note.md",
-    "Test.Public",
+    "TestPublic/dot public test note.md",
+    "TestPublic",
     "TAC/Documentation/TCBSD Install Information.md",
     "TAC/Documentation/TC Events Workflow.md",
     "TAC/Documentation/SPT v4 Learning.md",
