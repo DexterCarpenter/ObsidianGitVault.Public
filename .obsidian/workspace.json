@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "201b65db7ca1259a",
+        "id": "821e8eaeb08ba64e",
         "type": "tabs",
         "children": [
           {
-            "id": "15ba6d7e645a0f3c",
+            "id": "57078eb7e599e17e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TAC/TEC/Pump Project/TEC Pump Project Initial Notes.md",
+                "file": "Test.Public/dot public test note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TEC Pump Project Initial Notes"
-            }
-          },
-          {
-            "id": "ee423bbac044f158",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TAC/Recycletek/MMS/MMS TC Punchlist.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MMS TC Punchlist"
+              "title": "dot public test note"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5
+    "width": 300
   },
   "right": {
     "id": "74721a6798f1a9ba",
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -128,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "Scratchpad/my first tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from my first tasks"
             }
           },
           {
@@ -181,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5,
-    "collapsed": true
+    "width": 336.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,56 +181,55 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ee423bbac044f158",
+  "active": "57078eb7e599e17e",
   "lastOpenFiles": [
-    "Attatchments/Pasted image 20250718163826.png",
-    "Attatchments",
+    "TAC/Documentation/TwinCAT Visualization Learning.md",
+    "Test.Public/dot public test note.md",
+    "Test.Public",
+    "TAC/Documentation/TCBSD Install Information.md",
+    "TAC/Documentation/TC Events Workflow.md",
+    "TAC/Documentation/SPT v4 Learning.md",
     "TAC/Documentation/Installing XAR 4026.md",
-    "TAC/Recycletek/MMS/MMS TC Punchlist.md",
-    "TAC/TEC/Pump Project/TEC HMI Layout.md",
     "TAC/TEC/Pump Project/TEC Pump Project Initial Notes.md",
-    "_Resources/Attatchments/TAC Logo.svg",
-    "Personal/Thanksgiving NYC 2025.md",
-    "_Resources/Attatchments/image001.png",
-    "_Resources/Attatchments/Excalidraw EMMS.excalidraw.png",
-    "Daily/2025-07-16.md",
+    "TAC/TEC/Pump Project/TEC HMI Layout.md",
     "TAC/TEC/Pump Project",
     "TAC/TEC",
+    "TAC/Recycletek/MMS/MMS TC Punchlist.md",
+    "Daily/2025-07-16.md",
     "Daily/2025-07-15.md",
-    "conflict-files-obsidian-git.md",
+    "Attatchments/Pasted image 20250718163826.png",
+    "Attatchments",
+    "Personal/SFO Road Trip.md",
+    "PublicPublish/README.md",
+    "TAC/TAC Canvas.canvas",
+    "TAC/Documentation",
+    "Untitled.md",
+    "_Resources",
+    "README.md",
+    "PublicPublish/Templates.Public/Templater.new.md",
     "_Resources/Templates/Templater.new.md",
-    "_Resources/Templates",
-    "_Resources/Excalidraw/Drawing 2025-06-04 11.19.13.excalidraw.md",
-    "_Resources/Excalidraw",
-    "_Resources/Canvas/MyFirstCanvas.canvas",
-    "_Resources/Canvas",
+    "PublicPublish/Templates.Public",
+    "Personal/Thanksgiving NYC 2025.md",
+    "PublicPublish/Test note.md",
+    "Daily/2025-07-12.md",
+    "New folder",
+    "Public Publish/README.md",
+    "PublicPublish",
+    "Public Publish",
+    "TAC/Recycletek/MMS/MMS HMI Design.md",
+    "TAC/Recycletek/MMS/Events Checklist.md",
+    "Daily/2025-07-10.md",
+    "Daily/2025-07-09.md",
+    "Daily/2025-07-01.md",
+    "_Resources/Attatchments/image001.png",
+    "_Resources/Attatchments/TAC Logo.svg",
     "_Resources/Attatchments/Pasted image 20250711103242.png",
     "_Resources/Attatchments/Pasted image 20250711103219.png",
     "_Resources/Attatchments/Pasted image 20250711103107.png",
     "_Resources/Attatchments/Pasted image 20250711103039.png",
-    "_Resources/Attatchments/Pasted image 20250605192550.png",
     "_Resources/Attatchments/Pasted Image 20250623153724_929.png",
     "_Resources/Attatchments/Pasted Image 20250617141533_106.png",
-    "_Resources/Attatchments",
-    "_Resources",
-    "TAC/Documentation/TwinCAT Visualization Learning.md",
-    "TAC/Documentation/TCBSD Install Information.md",
-    "TAC/Documentation/TC Events Workflow.md",
-    "TAC/Documentation/SPT v4 Learning.md",
-    "TAC/Documentation",
-    "PublicPublish/Templates.Public/Templater.new.md",
-    "PublicPublish/Templates.Public",
-    "TAC/TwinCAT Visualization Learning.md",
-    "PublicPublish/README.md",
-    "Daily/2025-07-12.md",
-    "TAC/TC Events Workflow.md",
-    "TAC/Recycletek/MMS/Events Checklist.md",
-    "Daily/2025-07-10.md",
-    "Daily/2025-07-09.md",
-    "TAC/TCBSD Install Information.md",
-    "TAC/Recycletek/MMS/MMS System Architecture.md",
-    "TAC/Recycletek/MMS/MMS HMI Design.md",
-    "TAC/TAC Canvas.canvas",
-    "Canvas/MyFirstCanvas.canvas"
+    "_Resources/Attatchments/Pasted Image 20250617134000_180.png",
+    "_Resources/Canvas/MyFirstCanvas.canvas"
   ]
 }
