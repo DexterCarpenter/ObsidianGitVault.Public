@@ -55,9 +55,9 @@ jobs:
               # Export root.Public to root of publicrepo
               git archive "$branch_name" | tar -x -C /tmp/publicrepo
             else
-              # Export other .Public folders to their respective paths
+              # Export other .Public folders to their respective paths, stripping the top-level folder
               mkdir -p "/tmp/publicrepo/$clean_path"
-              git archive "$branch_name" | tar -x -C "/tmp/publicrepo/$clean_path"
+              git archive "$branch_name" | tar --strip-components=1 -x -C "/tmp/publicrepo/$clean_path"
             fi
 
             git branch -D "$branch_name"
