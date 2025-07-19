@@ -6,3 +6,6 @@
 https://test-c6015/Tc3PlcHmiWeb/Port_851/Visu/webvisu.htm
 ```
 - EventTable won't work
+```
+An exception occurred on this element. Please check the element properties. Exception message: An item with the same key has already been added.	
+```
