@@ -35,29 +35,7 @@ jobs:
           git add PublicExportRoot
           git commit -m "Prepare export of public folders" || echo "No changes to commit"
 
-      # - name: Find .Public folders
-      #   id: find-folders
-      #   run: |
-      #     find . -type d -name '*.Public' | sed 's|^\./||' > public-folders.txt
-      #     echo "::set-output name=folders::$(paste -sd ',' public-folders.txt)"
-
-      # - name: Split & Push each public folder
-      #   if: steps.find-folders.outputs.folders != ''
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GH_PUBLIC_PAT }}
-      #   run: |
-      #     git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | \
-      #        xargs -L1 git config --unset-all
-      #     git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
-      #     for F in $(cat public-folders.txt); do
-      #       BRANCH="public-split-$(echo $F | tr '/.' '--')"
-      #       git branch -D "$BRANCH" || echo "no existing branch $BRANCH"
-      #       git subtree split --prefix="$F" -b "$BRANCH"
-      #       git push public "$BRANCH:main" --force
-      #       git branch -D "$BRANCH"
-      #     done
-
-      - name: Split the PublicPublish folder
+      - name: Split the .Public folders
         run: |
           git subtree split --prefix=PublicExportRoot -b public-split
 
@@ -68,7 +46,7 @@ jobs:
             mv _.Public/README.md README.md
             git add README.md
             git rm _.Public/README.md
-            git commit -m "Move README from _.Public to root for public view"
+            git commit -m "Expose Public README to root for public view"
           fi
 
       - name: Push to public repo using PAT
@@ -79,7 +57,3 @@ jobs:
             xargs -L1 git config --unset-all
           git remote add public https://DexterCarpenter:${GH_TOKEN}@github.com/DexterCarpenter/ObsidianGitVault.Public.git
           git push public public-split:main --force
-
-      # - name: Cleanup remote
-      #   if: always()
-      #   run: git remote remove public || true

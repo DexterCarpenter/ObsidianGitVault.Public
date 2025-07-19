@@ -184,6 +184,7 @@
   "active": "57078eb7e599e17e",
   "lastOpenFiles": [
     "_.Public/README.md",
+    "README.md",
     "test.Public/testpublic.md",
     "test.Public",
     "Parent/Folder/Also not public.md",
@@ -211,7 +212,6 @@
     "TAC/TAC Canvas.canvas",
     "TAC/Documentation.Public",
     "_Resources",
-    "README.md",
     "_.Public/Templates/Templater.new.md",
     "_Resources/Templates/Templater.new.md",
     "_.Public/Templates",
