@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test.Public/dot public test note.md",
+                "file": "Parent/Child.Public/dot public test note.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,9 +183,10 @@
   },
   "active": "423a60f2ffd7f281",
   "lastOpenFiles": [
+    "Parent/Child.Public",
     "TAC/Documentation/TwinCAT Visualization Learning.md",
-    "Test.Public/dot public test note.md",
-    "Test.Public",
+    "Parent/Child.Public/dot public test note.md",
+    "Parent",
     "TAC/Documentation/TCBSD Install Information.md",
     "TAC/Documentation/TC Events Workflow.md",
     "TAC/Documentation/SPT v4 Learning.md",
@@ -220,7 +221,6 @@
     "TAC/Recycletek/MMS/Events Checklist.md",
     "Daily/2025-07-10.md",
     "Daily/2025-07-09.md",
-    "Daily/2025-07-01.md",
     "_Resources/Attatchments/image001.png",
     "_Resources/Attatchments/TAC Logo.svg",
     "_Resources/Attatchments/Pasted image 20250711103242.png",
