@@ -1,0 +1,433 @@
+[Message:   BepInEx] BepInEx 5.4.21.0 - Risk of Rain 2 (8/29/2024 6:25:19 PM)
+[Info   :   BepInEx] Running under Unity v2021.3.33.15620650
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
+[Info   :   BepInEx] Supports SRE: True
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.21.0]
+[Info   :   BepInEx] Loaded 1 patcher method from [SeekersPatcher 1.0.0.0]
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.GUI.Loader 1.0.0.0]
+[Info   :   BepInEx] Loaded 1 patcher method from [FixPluginTypesSerialization 1.0.0.0]
+[Info   :   BepInEx] 4 patcher plugins loaded
+[Info   :BepInEx.GUI.Loader] Finding and launching GUI
+[Info   :BepInEx.GUI.Loader] Found bepinex_gui v3 executable in C:\Users\dexte\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\DLC3 LookingGlass\BepInEx\patchers\RiskofThunder-BepInEx_GUI\BepInEx.GUI\bepinex_gui.exe
+[Info   :BepInEx.GUI.Loader] [SendLogToClient] Accepting Socket.
+[Info   :FixPluginTypesSerialization] Running under Unity v2021.3.33
+[Debug  :FixPluginTypesSerialization] Unity version obtained from main application module.
+[Info   :FixPluginTypesSerialization] Found offsets for current version, using them.
+[Info   :   BepInEx] Patching [RoR2] with [BepInEx.Chainloader]
+[Info   :   BepInEx] Patching [RoR2] with [_SeekersPatcher._SeekersPatcher]
+[Debug  :SeekersPatcher] Added RoR2.ItemDef RoR2.DLC2Content/Items::NegateAttack
+[Debug  :SeekersPatcher] Added RoR2.ItemDef RoR2.DLC2Content/Items::LowerHealthHigherDamage
+[Debug  :SeekersPatcher] Added RoR2.ItemDef RoR2.DLC2Content/Items::GoldOnStageStart
+[Debug  :SeekersPatcher] Added RoR2.ItemDef RoR2.DLC2Content/Items::ResetChests
+[Debug  :SeekersPatcher] Added RoR2.BuffDef RoR2.DLC2Content/Buffs::LowerHealthHigherDamageBuff
+[Debug  :SeekersPatcher] Added RoR2.EffectData RoR2.BulletAttack::_EffectData
+[Debug  :SeekersPatcher] Added System.Boolean RoR2.BulletAttack::_UsePools
+[Debug  :SeekersPatcher] Added System.Boolean RoR2.PlayerCharacterMasterController::wasClaimed
+[Debug  :SeekersPatcher] Added System.Int32[] RoR2.Inventory::itemStacks
+[Debug  :SeekersPatcher] Added RoR2.PickupIndex RoR2.PickupPickerController/Option::pickupIndex
+[Debug  :SeekersPatcher] Added RoR2.PickupIndex RoR2.ShopTerminalBehavior::pickupIndex
+[Debug  :SeekersPatcher] Added RoR2.PickupIndex RoR2.GenericPickupController::pickupIndex
+[Debug  :SeekersPatcher] Added System.Int32 RoR2.CharacterModel::invisibilityCount
+[Debug  :SeekersPatcher] System.Void RoR2.HealthComponent::Suicide(UnityEngine.GameObject,UnityEngine.GameObject,RoR2.DamageType)
+[Debug  :SeekersPatcher] System.Void RoR2.Projectile.ProjectileManager::FireProjectile(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.GameObject,System.Single,System.Single,System.Boolean,RoR2.DamageColorIndex,UnityEngine.GameObject,System.Single)
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 5 plugins to load
+[Info   :   BepInEx] TS Manifest: pseudopulse-SeekersPatcher-1.4.1
+[Info   :   BepInEx] Loading [__SeekersPatcherDLL 1.0.0]
+[Info   :   BepInEx] TS Manifest: RiskofThunder-RoR2BepInExPack-1.38.0
+[Info   :   BepInEx] Loading [RoR2BepInExPack 1.38.0]
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.HookWatcher.HarmonyAddPatchWatcher added by assembly: RoR2BepInExPack.dll for: HarmonyLib.PatchJobs`1+Job[[System.Reflection.MethodInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]].AddPatch
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.VanillaFixes.ILLine.ShowILLine added by assembly: RoR2BepInExPack.dll for: System.Diagnostics.StackTrace.AddFrames
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.VanillaFixes.FixSystemInitializer.EnqueueAllInitializers added by assembly: RoR2BepInExPack.dll for: RoR2.SystemInitializerAttribute.ExecuteStatic
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.VanillaFixes.FixSystemInitializer.LogBadCycle added by assembly: RoR2BepInExPack.dll for: RoR2.SystemInitializerAttribute.ExecuteCoroutine
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.ReflectionHooks.AutoCatchReflectionTypeLoadException.SaferGetTypes added by assembly: RoR2BepInExPack.dll for: System.Reflection.Assembly.GetTypes
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.ReflectionHooks.AutoCatchReflectionTypeLoadException.SaferGetTypes added by assembly: RoR2BepInExPack.dll for: System.Reflection.Assembly.GetExportedTypes
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.VanillaFixes.SaferAchievementManager.SaferCollectAchievementDefs added by assembly: RoR2BepInExPack.dll for: RoR2.AchievementManager.CollectAchievementDefs
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.VanillaFixes.SaferResourceAvailability.TryCatchEachLoopIteration added by assembly: RoR2BepInExPack.dll for: ResourceAvailability.MakeAvailable
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.VanillaFixes.SaferSearchableAttribute.SaferScanAssemblyILManipulator added by assembly: RoR2BepInExPack.dll for: HG.Reflection.SearchableAttribute.ScanAssembly
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.VanillaFixes.FixConsoleLog.DoNothing added by assembly: RoR2BepInExPack.dll for: RoR2.UnitySystemConsoleRedirector.Redirect
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.VanillaFixes.FixConVar.ScanAllAssemblies added by assembly: RoR2BepInExPack.dll for: RoR2.Console+<InternalInitConVarsCoroutine>d__26.MoveNext
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.VanillaFixes.FixDeathAnimLog.FixLackingAnim added by assembly: RoR2BepInExPack.dll for: EntityStates.GenericCharacterDeath.PlayDeathAnimation
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.VanillaFixes.FixExtraGameModesMenu.FixIt added by assembly: RoR2BepInExPack.dll for: RoR2.UI.MainMenu.MainMenuController.Start
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.ModCompatibility.FixNullEntitlement.FixEntitledCheck added by assembly: RoR2BepInExPack.dll for: RoR2.EntitlementManagement.BaseUserEntitlementTracker`1[[RoR2.LocalUser, RoR2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]].UserHasEntitlement
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.ModCompatibility.FixNullEntitlement.FixEntitledCheck added by assembly: RoR2BepInExPack.dll for: RoR2.EntitlementManagement.BaseUserEntitlementTracker`1[[RoR2.NetworkUser, RoR2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]].UserHasEntitlement
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.VanillaFixes.FixNonLethalOneHP.FixLethality added by assembly: RoR2BepInExPack.dll for: RoR2.HealthComponent.TakeDamageProcess
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.VanillaFixes.FixRunScaling.CalculateDifficultyCoefficientOnRunStart added by assembly: RoR2BepInExPack.dll for: RoR2.Run.Start
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.VanillaFixes.FixDedicatedServerMaxPlayerCount.FixUsageOfMaxPlayerCountVariable added by assembly: RoR2BepInExPack.dll for: UnityEngine.Networking.NetworkManager.StartHost
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.VanillaFixes.FixDedicatedServerMaxPlayerCount.FixUsageOfMaxPlayerCountVariable2 added by assembly: RoR2BepInExPack.dll for: UnityEngine.Networking.NetworkManager.StartServer
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.VanillaFixes.FixHasEffectiveAuthority.FixHook added by assembly: RoR2BepInExPack.dll for: RoR2.Util.HasEffectiveAuthority
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.VanillaFixes.FixRuleBookViewerStrip.FindIndexAndSetWidth added by assembly: RoR2BepInExPack.dll for: RoR2.UI.RuleBookViewerStrip.SetData
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.VanillaFixes.LogNetworkInvokeException.AddExceptionLogging added by assembly: RoR2BepInExPack.dll for: UnityEngine.Networking.NetworkConnection.InvokeDelegateWithCatch
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.ModCompatibility.FixMultiCorrupt.FixStep added by assembly: RoR2BepInExPack.dll for: RoR2.Items.ContagiousItemManager.StepInventoryInfection
+[Debug  :RoR2BepInExPack] OnHook RoR2BepInExPack.ModCompatibility.FixMultiCorrupt.OnGenerateStageRNG added by assembly: RoR2BepInExPack.dll for: RoR2.Run.GenerateStageRNG
+[Debug  :RoR2BepInExPack] ILHook RoR2BepInExPack.VanillaFixes.HarmonyMatchException.FixHarmonyMatchException added by assembly: RoR2BepInExPack.dll for: HarmonyLib.Public.Patching.HarmonyManipulator.ApplyManipulators
+[Info   :   BepInEx] TS Manifest: score-MiscFixes-1.5.1
+[Info   :   BepInEx] Loading [MiscFixes 1.5.1]
+[Debug  :RoR2BepInExPack] Harmony Prefix static bool MiscFixes.ErrorPolice.Harmony.PermanentFixes::NormalizeParticleScale_OnEnable(RoR2.NormalizeParticleScale __instance) added by MiscFixes.dll for: void RoR2.NormalizeParticleScale::OnEnable()
+[Debug  :RoR2BepInExPack] Harmony Postfix static void MiscFixes.ErrorPolice.Harmony.PermanentFixes::BurnEffectController_AddFireParticles(RoR2.NormalizeParticleScale __instance, RoR2.BurnEffectControllerHelper& __result, UnityEngine.Renderer modelRenderer) added by MiscFixes.dll for: RoR2.BurnEffectControllerHelper RoR2.BurnEffectController::AddFireParticles(UnityEngine.Renderer modelRenderer, UnityEngine.Transform targetParentTransform)
+[Debug  :RoR2BepInExPack] Harmony Prefix static bool MiscFixes.ErrorPolice.Harmony.PermanentFixes::SurvivorIconController_GetLocalUser(RoR2.UI.SurvivorIconController __instance, RoR2.LocalUser& __result) added by MiscFixes.dll for: RoR2.LocalUser RoR2.UI.SurvivorIconController::GetLocalUser()
+[Debug  :RoR2BepInExPack] Harmony Prefix static bool MiscFixes.ErrorPolice.Harmony.PermanentFixes::RuleChoiceController_FindNetworkUser(RoR2.UI.RuleChoiceController __instance, RoR2.NetworkUser& __result) added by MiscFixes.dll for: RoR2.NetworkUser RoR2.UI.RuleChoiceController::FindNetworkUser()
+[Debug  :RoR2BepInExPack] Harmony Prefix static void MiscFixes.ErrorPolice.Harmony.PermanentFixes::TemporaryOverlayInstance_SetupMaterial(RoR2.TemporaryOverlayInstance __instance) added by MiscFixes.dll for: void RoR2.TemporaryOverlayInstance::SetupMaterial()
+[Debug  :RoR2BepInExPack] Harmony Postfix static void MiscFixes.ErrorPolice.Harmony.PermanentFixes::HalcyoniteShrineInteractable_Awake(RoR2.HalcyoniteShrineInteractable __instance) added by MiscFixes.dll for: void RoR2.HalcyoniteShrineInteractable::Awake()
+[Debug  :RoR2BepInExPack] Harmony Finalizer static Exception MiscFixes.ErrorPolice.Harmony.PermanentFixes::FixFacepunch() added by MiscFixes.dll for: void Facepunch.Steamworks.BaseSteamworks::RunUpdateCallbacks()
+[Debug  :RoR2BepInExPack] Harmony Prefix static void MiscFixes.ErrorPolice.Harmony.PermanentFixes::Ugh(RoR2.FlickerLight __instance) added by MiscFixes.dll for: void RoR2.FlickerLight::OnEnable()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.PermanentFixes::FixVoidSeed(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.VoidCamp.Idle::FixedUpdate()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.PermanentFixes::FixVoidSeed(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual string EntityStates.VoidCamp.Idle+VoidCampObjectiveTracker::GenerateString()
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.NormalizeParticleScale.OnEnable
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.BurnEffectController.AddFireParticles
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.UI.SurvivorIconController.GetLocalUser
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.UI.RuleChoiceController.FindNetworkUser
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.TemporaryOverlayInstance.SetupMaterial
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.HalcyoniteShrineInteractable.Awake
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: Facepunch.Steamworks.BaseSteamworks.RunUpdateCallbacks
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.FlickerLight.OnEnable
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.VoidCamp.Idle.FixedUpdate
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.VoidCamp.Idle+VoidCampObjectiveTracker.GenerateString
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixEnterSkyLeapOnEnter(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.BrotherMonster.EnterSkyLeap::OnEnter()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixExitSkyLeapOnEnter(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.BrotherMonster.ExitSkyLeap::OnEnter()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixHoldSkyLeapOnEnter(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.BrotherMonster.HoldSkyLeap::OnEnter()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixHoldSkyLeapOnExit(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.BrotherMonster.HoldSkyLeap::OnExit()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixSpellChannelStateOnEnter(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.BrotherMonster.SpellChannelState::OnEnter()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::SpellChannelState_OnExit(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.BrotherMonster.SpellChannelState::OnExit()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixFireArrowSnipeFireBullet(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.Huntress.Weapon.FireArrowSnipe::FireBullet(UnityEngine.Ray aimRay)
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixHiddenOnEnter(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.MinorConstruct.Hidden::OnEnter()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixHiddenOnExit(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.MinorConstruct.Hidden::OnExit()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixScrapperBaseStateOnEnter(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.Scrapper.ScrapperBaseState::OnEnter()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixBuffPassengerWhileSeatedOnDisable(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.BuffPassengerWhileSeated::OnDisable()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixBuffPassengerWhileSeatedOnEnable(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.BuffPassengerWhileSeated::OnEnable()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixDelusionChestControllerResetChestForDelusion(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.DelusionChestController::ResetChestForDelusion()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixDelusionChestControllerStart(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.DelusionChestController::Start()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixDevotionInventoryControllerAwake(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.DevotionInventoryController::Awake()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.ServerCommandsOnClient::FixMasterDropDropletDropItems(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.MasterDropDroplet::DropItems()
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.BrotherMonster.EnterSkyLeap.OnEnter
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.BrotherMonster.ExitSkyLeap.OnEnter
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.BrotherMonster.HoldSkyLeap.OnEnter
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.BrotherMonster.HoldSkyLeap.OnExit
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.BrotherMonster.SpellChannelState.OnEnter
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.BrotherMonster.SpellChannelState.OnExit
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.Huntress.Weapon.FireArrowSnipe.FireBullet
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.MinorConstruct.Hidden.OnEnter
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.MinorConstruct.Hidden.OnExit
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.Scrapper.ScrapperBaseState.OnEnter
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.BuffPassengerWhileSeated.OnDisable
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.BuffPassengerWhileSeated.OnEnable
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.DelusionChestController.ResetChestForDelusion
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.DelusionChestController.Start
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.DevotionInventoryController.Awake
+[Warning: MiscFixes] Failed to patch RoR2.DevotionInventoryController::Awake
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.MasterDropDroplet.DropItems
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::TemporaryVisualEffect_RebuildVisualComponents(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.TemporaryVisualEffect::RebuildVisualComponents()
+[Debug  :RoR2BepInExPack] Harmony Prefix static bool MiscFixes.ErrorPolice.Harmony.VanillaFixes::AffixAurelioniteBehavior_Update(RoR2.AffixAurelioniteBehavior __instance) added by MiscFixes.dll for: void RoR2.AffixAurelioniteBehavior::Update()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::VineOrb_OnArrival(MonoMod.Cil.ILContext il, MonoMod.Cil.ILLabel retLabel) added by MiscFixes.dll for: virtual void RoR2.Orbs.VineOrb::OnArrival()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::StatManager_ProcessGoldEvents(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: static void RoR2.Stats.StatManager::ProcessGoldEvents()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::ElusiveAntlersPickup_OnShardDestroyed(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.ElusiveAntlersPickup::OnShardDestroyed(RoR2.ElusiveAntlersPickup+ElusiveAntlersDestroyCondition destroyCondition)
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::FogDamageController_EvaluateTeam(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.FogDamageController::EvaluateTeam(RoR2.TeamIndex teamIndex)
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::DeathState_FixedUpdate(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void EntityStates.LunarExploderMonster.DeathState::FixedUpdate()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::RouletteChestController_Idle_OnEnter(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: virtual void RoR2.RouletteChestController+Idle::OnEnter()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::DetachParticleOnDestroyAndEndEmission_OnDisable(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.DetachParticleOnDestroyAndEndEmission::OnDisable()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::CharacterModel_Awake(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.CharacterModel::Awake()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::CrosshairUtils_CrosshairOverrideBehavior_OnDestroy(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void RoR2.UI.CrosshairUtils+CrosshairOverrideBehavior::OnDestroy()
+[Debug  :RoR2BepInExPack] Harmony Prefix static bool MiscFixes.ErrorPolice.Harmony.VanillaFixes::RewiredIntegrationManager_RefreshJoystickAssignment() added by MiscFixes.dll for: static void RoR2.RewiredIntegrationManager::RefreshJoystickAssignment()
+[Debug  :RoR2BepInExPack] Harmony Prefix static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::MeridianEventTriggerInteraction_Awake(RoR2.MeridianEventTriggerInteraction __instance) added by MiscFixes.dll for: void RoR2.MeridianEventTriggerInteraction::Awake()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::Frolic_TeleportAroundPlayer(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void EntityStates.ChildMonster.Frolic::TeleportAroundPlayer()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::TeamManager_LongstandingSolitudesInParty(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: static int RoR2.TeamManager::LongstandingSolitudesInParty()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::Util_HealthComponentToTransform(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: static UnityEngine.Transform RoR2.Util::HealthComponentToTransform(RoR2.HealthComponent healthComponent)
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::WhirlWindPersuitCycle_UpdateDecelerate(MonoMod.Cil.ILContext il, MonoMod.Cil.ILLabel retLabel) added by MiscFixes.dll for: void EntityStates.Halcyonite.WhirlWindPersuitCycle::UpdateDecelerate()
+[Debug  :RoR2BepInExPack] Harmony ILManipulator static void MiscFixes.ErrorPolice.Harmony.VanillaFixes::MeridiansWillFire_InitializePullInfo(MonoMod.Cil.ILContext il) added by MiscFixes.dll for: void EntityStates.FalseSon.MeridiansWillFire::InitializePullInfo(int hurtboxIndex)
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.TemporaryVisualEffect.RebuildVisualComponents
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.AffixAurelioniteBehavior.Update
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.Orbs.VineOrb.OnArrival
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.Stats.StatManager.ProcessGoldEvents
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.ElusiveAntlersPickup.OnShardDestroyed
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.FogDamageController.EvaluateTeam
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.LunarExploderMonster.DeathState.FixedUpdate
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.RouletteChestController+Idle.OnEnter
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.DetachParticleOnDestroyAndEndEmission.OnDisable
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.CharacterModel.Awake
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.UI.CrosshairUtils+CrosshairOverrideBehavior.OnDestroy
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.RewiredIntegrationManager.RefreshJoystickAssignment
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.MeridianEventTriggerInteraction.Awake
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.ChildMonster.Frolic.TeleportAroundPlayer
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.TeamManager.LongstandingSolitudesInParty
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: RoR2.Util.HealthComponentToTransform
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.Halcyonite.WhirlWindPersuitCycle.UpdateDecelerate
+[Debug  :RoR2BepInExPack] ILHook HarmonyLib.Public.Patching.ManagedMethodPatcher.Manipulator added by assembly: 0Harmony.dll for: EntityStates.FalseSon.MeridiansWillFire.InitializePullInfo
+[Info   :   BepInEx] TS Manifest: Rune580-Risk_Of_Options-2.8.4
+[Info   :   BepInEx] Loading [RiskOfOptions 2.8.4]
+[Debug  :RoR2BepInExPack] OnHook RiskOfOptions.Lib.LanguageApi.GetLocalizedStringByToken added by assembly: RiskOfOptions.dll for: RoR2.Language.GetLocalizedStringByToken
+[Error  : Unity Log] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown., Key=RoR2/Base/UI/matUIPaintStreakFlash.mat, Type=UnityEngine.Material
+[Error  : Unity Log] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown., Key=RoR2/Base/UI/matUIPaintStreakFlash.mat, Type=UnityEngine.Material
+[Debug  :RoR2BepInExPack] OnHook RiskOfOptions.ModSettingsManager.PauseManagerOnCCTogglePause added by assembly: RiskOfOptions.dll for: RoR2.PauseManager.CCTogglePause
+[Info   :   BepInEx] TS Manifest: DropPod-LookingGlass-1.14.3
+[Info   :   BepInEx] Loading [LookingGlass 1.14.0]
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.StatsDisplay.StatsDisplayClass.OnEnable added by assembly: LookingGlass.dll for: RoR2.UI.ScoreboardController.OnEnable
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.StatsDisplay.StatsDisplayClass.OnDisable added by assembly: LookingGlass.dll for: RoR2.UI.ScoreboardController.OnDisable
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.AutoSortItems.AutoSortItemsClass.UpdateDisplayOverride added by assembly: LookingGlass.dll for: RoR2.UI.ItemInventoryDisplay.UpdateDisplay
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.ItemStatsNameSpace.ItemStats.PickupText added by assembly: LookingGlass.dll for: RoR2.UI.GenericNotification.SetItem
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.ItemStatsNameSpace.ItemStats.EquipmentText added by assembly: LookingGlass.dll for: RoR2.UI.GenericNotification.SetEquipment
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.ItemStatsNameSpace.ItemStats.ItemIndexText added by assembly: LookingGlass.dll for: RoR2.UI.ItemIcon.SetItemIndex
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.ItemStatsNameSpace.ItemStats.ItemPinged added by assembly: LookingGlass.dll for: RoR2.PingerController.SetCurrentPing
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.ItemStatsNameSpace.ItemStats.SkillUpdate added by assembly: LookingGlass.dll for: RoR2.UI.SkillIcon.Update
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.CommandWindowBlur.NoWindowBlur.OnDisplayBegin added by assembly: LookingGlass.dll for: RoR2.PickupPickerController.OnDisplayBegin
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.HidePickupNotifs.HidePickupNotifications.PushPickupNotification added by assembly: LookingGlass.dll for: RoR2.CharacterMasterNotificationQueue.PushPickupNotification
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.CommandItemCount.CommandItemCountClass.PickupPickerPanel added by assembly: LookingGlass.dll for: RoR2.UI.PickupPickerPanel.SetPickupOptions
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.CommandItemCount.CommandItemCountClass.InitializeTransformedToOriginal added by assembly: LookingGlass.dll for: RoR2.Items.ContagiousItemManager.InitTransformationTable
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.CommandItemCount.CommandItemCountClass.SubmitChoice added by assembly: LookingGlass.dll for: RoR2.PickupPickerController.SubmitChoice
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.CommandItemCount.CommandItemCountClass.SortByCraftableItem added by assembly: LookingGlass.dll for: RoR2.CraftingController.FilterAvailableOptions
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.ItemCounters.ItemCounter.UpdateMoneyText added by assembly: LookingGlass.dll for: RoR2.UI.ScoreboardStrip.UpdateMoneyText
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.ItemCounters.ItemCounter.SetMaster added by assembly: LookingGlass.dll for: RoR2.UI.ScoreboardStrip.SetMaster
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.BuffTimers.BuffTimersClass.UpdateLayout added by assembly: LookingGlass.dll for: RoR2.UI.BuffDisplay.UpdateLayout
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.DPSMeterStuff.DPSMeter.TrackDamage added by assembly: LookingGlass.dll for: RoR2.GlobalEventManager.ClientDamageNotified
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.DPSMeterStuff.DPSMeter.RunOnEnable added by assembly: LookingGlass.dll for: RoR2.Run.OnEnable
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.DPSMeterStuff.DPSMeter.ResetOnStage added by assembly: LookingGlass.dll for: RoR2.Stage.PreStartClient
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.PortalTracker.StageStart added by assembly: LookingGlass.dll for: RoR2.Stage.PreStartClient
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.PortalTracker.TrackPortalSpawner added by assembly: LookingGlass.dll for: RoR2.PortalSpawner.OnWillSpawnUpdated
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.EquipTimerFix.CooldownFixer.SetDisplayData added by assembly: LookingGlass.dll for: RoR2.UI.EquipmentIcon.SetDisplayData
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.EquipTimerFix.CooldownFixer.Update added by assembly: LookingGlass.dll for: RoR2.UI.SkillIcon.Update
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.HiddenItems.UnHiddenItems.ItemCatalogInit added by assembly: LookingGlass.dll for: RoR2.ItemCatalog.Init
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.BuffDescriptions.BuffDescriptionsClass.BuffIconUpdateIcon added by assembly: LookingGlass.dll for: RoR2.UI.BuffIcon.UpdateIcon
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.PickupNotifsDuration.PickupNotifDurationClass.PushNotification added by assembly: LookingGlass.dll for: RoR2.CharacterMasterNotificationQueue.PushNotification
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.AllyCardInfo.AddAllyTooltips added by assembly: LookingGlass.dll for: RoR2.UI.AllyCardController.UpdateInfo
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.AllyCardInfo.MakeTargetable added by assembly: LookingGlass.dll for: RoR2.UI.AllyCardController.Awake
+[Debug  :RoR2BepInExPack] OnHook LookingGlass.AllyCardInfo.AddRaycaster added by assembly: LookingGlass.dll for: RoR2.UI.AllyCardManager.OnEnable
+[Info   : Unity Log] Checking for old
+[Message:   BepInEx] Chainloader startup complete
+[Info   : Unity Log] SCANNING ASSEMBLIES (not using cached searchables/assemblies!)
+[Warning: Unity Log] Could not find scene with name "loadingbasic".
+[Warning: Unity Log] Could not find scene with name "loadingbasic".
+[Warning: Unity Log] Could not find scene with name "loadingbasic".
+[Warning: Unity Log] Could not find scene with name "loadingbasic".
+[Warning: Unity Log] Could not find scene with name "loadingbasic".
+[Info   :   Console] Facepunch.Steamworks Unity: WindowsPlayer
+[Info   :   Console] Facepunch.Steamworks Os: Windows
+[Info   :   Console] Facepunch.Steamworks Arch: x64
+[Info   : Unity Log] Initializing Mod System...
+[Info   : Unity Log] Mod System initialized.
+[Info   : Unity Log] WwiseUnity: Wwise(R) SDK Version 2023.1.4 Build 8496.
+[Info   : Unity Log] WwiseUnity: Setting Plugin DLL path to: S:/SteamLibrary/steamapps/common/Risk of Rain 2/Risk of Rain 2_Data\Plugins\x86_64
+[Info   : Unity Log] WwiseUnity: Sound engine initialized successfully.
+[Warning: Unity Log] The referenced script on this Behaviour (Game Object '<null>') is missing!
+[Warning: Unity Log] The referenced script (Rewired.Platforms.Switch.NintendoSwitchInputManager) on this Behaviour is missing!
+[Warning: Unity Log] The referenced script on this Behaviour (Game Object 'Rewired Input Manager') is missing!
+[Warning: Unity Log] WwiseUnity: Trying to load soundbank that's already loaded: item_proc_lowerPricedChest
+[Info   : Unity Log] Duplicate Soundbank loaded. ID: 0
+[Warning: Unity Log] Layer "SplitscreenPlayerMain" is defined in this project's "Tags and Layers" settings but is not defined in LayerIndex!
+[Warning: Unity Log] Layer "SplitscreenPlayer2" is defined in this project's "Tags and Layers" settings but is not defined in LayerIndex!
+[Warning: Unity Log] Layer "SplitscreenPlayer3" is defined in this project's "Tags and Layers" settings but is not defined in LayerIndex!
+[Warning: Unity Log] Layer "SplitscreenPlayer4" is defined in this project's "Tags and Layers" settings but is not defined in LayerIndex!
+[Info   : Unity Log] "user_profile_main" = ""
+The current user profile.
+[Info   : Unity Log] "usesocialiconflag" is not a recognized ConCommand or ConVar.
+[Info   : Unity Log] "user_profile_main" = ""
+The current user profile.
+[Info   : Unity Log] "usesocialiconflag" is not a recognized ConCommand or ConVar.
+[Info   : Unity Log] Setting current language to "en"
+[Info   : Unity Log] Begin Shader Loading
+[Error  : Unity Log] UnityEngine.AddressableAssets.InvalidKeyException: Exception of type 'UnityEngine.AddressableAssets.InvalidKeyException' was thrown., Key=86212504c7e9f468db2300dc5932dc17, Type=UnityEngine.Shader
+[Info   : Unity Log] Error loading shader: Hidden/ProBuilder/EdgePicker / 86212504c7e9f468db2300dc5932dc17
+[Info   : Unity Log] End Shader Loading
+[Warning: Unity Log] Could not find scene with name "splash".
+[Warning: Unity Log] Could not find scene with name "splash".
+[Warning: Unity Log] Could not find scene with name "splash".
+[Warning: Unity Log] Could not find scene with name "splash".
+[Warning: Unity Log] Could not find scene with name "splash".
+[Warning: Unity Log] Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+[Warning: Unity Log] Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+[Warning: Unity Log] Failed to assign Items.LemurianHarness: Asset "LemurianHarness" not found.
+[Warning: Unity Log] Failed to assign Items.NegateAttack: Asset "NegateAttack" not found.
+[Warning: Unity Log] Failed to assign Items.LowerHealthHigherDamage: Asset "LowerHealthHigherDamage" not found.
+[Warning: Unity Log] Failed to assign Items.GoldOnStageStart: Asset "GoldOnStageStart" not found.
+[Warning: Unity Log] Failed to assign Items.ResetChests: Asset "ResetChests" not found.
+[Warning: Unity Log] Failed to assign Buffs.TamperedHeart: Asset "bdTamperedHeart" not found.
+[Warning: Unity Log] Failed to assign Buffs.FreeChest: Asset "bdFreeChest" not found.
+[Warning: Unity Log] Failed to assign Buffs.LowerHealthHigherDamageBuff: Asset "bdLowerHealthHigherDamageBuff" not found.
+[Warning: Unity Log] Failed to assign Buffs.Deafened: Asset "bdDeafened" not found.
+[Warning: Unity Log] Failed to assign Buffs.HiddenMoveSpeed: Asset "bdHiddenMoveSpeed" not found.
+[Warning: Unity Log] Failed to assign Buffs.Grounded: Asset "bdGrounded" not found.
+[Warning: Unity Log] Failed to assign BodyPrefabs.JailerDroneRemoteOpBody: Asset "JailerDroneRemoteOpBody" not found.
+[Warning: Unity Log] Could not find scene with name "intro".
+[Warning: Unity Log] Could not find scene with name "intro".
+[Warning: Unity Log] Could not find scene with name "intro".
+[Warning: Unity Log] Could not find scene with name "intro".
+[Warning: Unity Log] Could not find scene with name "intro".
+[Warning: Unity Log] Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+[Warning: Unity Log] Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+[Warning: Unity Log] Failed to assign Items.SummonedEcho: Asset "SummonedEcho" not found.
+[Warning: Unity Log] Failed to assign Equipment.AffixEcho: Asset "EliteEchoEquipment" not found.
+[Warning: Unity Log] Failed to assign Buffs.AffixEcho: Asset "bdEliteEcho" not found.
+[Warning: Unity Log] Failed to assign Elites.Echo: Asset "edEcho" not found.
+[Warning: Unity Log] Network message MsgType.Highest + 22 is unregistered.
+[Info   : Unity Log] ApplyEntityStateConfiguration(EntityStates.ClayBruiser.Weapon.Copycat.MinigunCopycatState (RoR2.EntityStateConfiguration)) failed: state type is null.
+[Info   : Unity Log] ApplyEntityStateConfiguration(EntityStates.ClayBruiser.Weapon.MinigunFireCopycatState (RoR2.EntityStateConfiguration)) failed: state type is null.
+[Info   : Unity Log] ApplyEntityStateConfiguration(EntityStates.ClayBruiser.Weapon.MinigunSpinDownCopycatState (RoR2.EntityStateConfiguration)) failed: state type is null.
+[Info   : Unity Log] ApplyEntityStateConfiguration(EntityStates.ClayBruiser.Weapon.MinigunSpinUpCopycatState (RoR2.EntityStateConfiguration)) failed: state type is null.
+[Info   : Unity Log] ApplyEntityStateConfiguration(EntityStates.FalseSon.TheTamperedHeart (RoR2.EntityStateConfiguration)) failed: state type is null.
+[Info   : Unity Log] ApplyEntityStateConfiguration(EntityStates.SolusHeart.CircleTransformation (RoR2.EntityStateConfiguration)) failed: state type is null.
+[Info   : Unity Log] ApplyEntityStateConfiguration(EntityStates.SolusHeart.Phase4.Mission4 (RoR2.EntityStateConfiguration)) failed: state type is null.
+[Info   : Unity Log] ApplyEntityStateConfiguration(EntityStates.SolusHeart.Phase4.SolusHeart4 (RoR2.EntityStateConfiguration)) failed: state type is null.
+[Info   : Unity Log] ApplyEntityStateConfiguration(EntityStates.SolusHeart.TinyTransformation (RoR2.EntityStateConfiguration)) failed: state type is null.
+[Info   : Unity Log] Attempting to load user profile /UserProfiles/20093303-5813-49f6-9e59-68c5279f3630.xml
+[Info   : Unity Log] stream.Length=436314
+[Info   : Unity Log] Setting current language to "en"
+[Info   : Unity Log] "usesocialiconflag" is not a recognized ConCommand or ConVar.
+[Info   : Unity Log] Setting current language to "en"
+[Info   : Unity Log] "usesocialiconflag" is not a recognized ConCommand or ConVar.
+[Info   : Unity Log] loading RunReport /RunReports/History/32de94e7-c8d5-4c2c-ac32-63b052924df1.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/c313d073-d6bf-4f5b-a562-3041914cfa1d.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/e19a028c-f7b9-4d30-9567-b8d22a276117.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/4ec2a71f-e39c-4c18-8429-54f0811a35fc.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/8752e063-3f9b-4088-9eba-f7dae79c334e.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/0e3294cf-71a2-4e11-baba-9170569d6e5e.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/64062821-86e7-4548-a7e6-09c0bd1f9b55.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/bf89d808-743a-4ec1-b758-0c4a8a0e0d87.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/a9a3b6e3-56d2-42ef-9415-a706f917f588.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/e0e2368f-561c-4d8f-ad2e-23cd6d1b3d8c.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/d93f5b79-3f13-493f-8760-396fe11d08ad.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/9c1f9e56-6c2d-435c-81b9-8b5f4c6afba4.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/ca173871-8324-4b87-aed5-5260795aecfa.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/e5584ecd-7da4-4f22-a6ec-f4d991c30af5.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/98bc7eb7-c38e-4e69-a3d9-8a8d2b787f16.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/5ae556d7-068a-4500-aaea-704805dd32a9.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/1e2a2f06-0587-4d77-9047-cc0d45d00da4.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/82775e27-fca8-4237-8ad3-891e035a2ac3.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/8a587661-32ab-4b3c-8a5e-d44c16987e06.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/4d57244b-5bca-4fc7-ac64-e7af4fdbe156.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/3a9789e6-5b3b-41be-9740-93dd65c0684b.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/204cdcfc-822b-4008-8368-ef5c062bc05a.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/24743f8f-f985-4a60-83cf-02ea2fa685c1.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/df2cc8e7-4f47-449b-a2a0-886635ffb99a.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/fb562953-a428-4741-8f25-10dd4f399cf2.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/53a3eacd-6261-474f-90ea-261340f5bb40.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/1d3400b5-873e-4caf-8018-873168fc0ea3.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/959da256-0c4e-4906-a279-e94322de5e28.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/a04981a1-ee4f-4090-bd5b-0798d0bc5996.xml
+[Info   : Unity Log] Setting offline scene to title
+[Warning: Unity Log] Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+[Warning: Unity Log] Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on SettingsPanelTitle(Clone)
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on FooterContainer
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on FooterContainer
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on TitleMenu
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on TitleMenu
+[Info   : Unity Log] BaseMainMenuScreen: OnEnter()
+[Info   : Unity Log] Risk of Rain 2 build: ver. 1.4.0#840*
+[Info   : Unity Log] Setting offline scene to logbook
+[Warning: Unity Log] logbook has no groundNodesAsset
+[Warning: Unity Log] logbook has no airNodesAsset
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on LogbookMenu
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on LogbookMenu
+[Info   : Unity Log] loading RunReport /RunReports/History/32de94e7-c8d5-4c2c-ac32-63b052924df1.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/c313d073-d6bf-4f5b-a562-3041914cfa1d.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/e19a028c-f7b9-4d30-9567-b8d22a276117.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/4ec2a71f-e39c-4c18-8429-54f0811a35fc.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/8752e063-3f9b-4088-9eba-f7dae79c334e.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/0e3294cf-71a2-4e11-baba-9170569d6e5e.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/64062821-86e7-4548-a7e6-09c0bd1f9b55.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/bf89d808-743a-4ec1-b758-0c4a8a0e0d87.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/a9a3b6e3-56d2-42ef-9415-a706f917f588.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/e0e2368f-561c-4d8f-ad2e-23cd6d1b3d8c.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/d93f5b79-3f13-493f-8760-396fe11d08ad.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/9c1f9e56-6c2d-435c-81b9-8b5f4c6afba4.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/ca173871-8324-4b87-aed5-5260795aecfa.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/e5584ecd-7da4-4f22-a6ec-f4d991c30af5.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/98bc7eb7-c38e-4e69-a3d9-8a8d2b787f16.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/5ae556d7-068a-4500-aaea-704805dd32a9.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/1e2a2f06-0587-4d77-9047-cc0d45d00da4.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/82775e27-fca8-4237-8ad3-891e035a2ac3.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/8a587661-32ab-4b3c-8a5e-d44c16987e06.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/4d57244b-5bca-4fc7-ac64-e7af4fdbe156.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/3a9789e6-5b3b-41be-9740-93dd65c0684b.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/204cdcfc-822b-4008-8368-ef5c062bc05a.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/24743f8f-f985-4a60-83cf-02ea2fa685c1.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/df2cc8e7-4f47-449b-a2a0-886635ffb99a.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/fb562953-a428-4741-8f25-10dd4f399cf2.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/53a3eacd-6261-474f-90ea-261340f5bb40.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/1d3400b5-873e-4caf-8018-873168fc0ea3.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/959da256-0c4e-4906-a279-e94322de5e28.xml
+[Info   : Unity Log] loading RunReport /RunReports/History/a04981a1-ee4f-4090-bd5b-0798d0bc5996.xml
+[Warning: Unity Log] Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on LogbookEntryPanel (JUICED)
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on LogbookEntryPanel (JUICED)
+[Warning: Unity Log] Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+[Warning: Unity Log] Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+[Info   : Unity Log] Setting offline scene to title
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on SettingsPanelTitle(Clone)
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on FooterContainer
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on FooterContainer
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on TitleMenu
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on TitleMenu
+[Info   : Unity Log] BaseMainMenuScreen: OnEnter()
+[Info   : Unity Log] Risk of Rain 2 build: ver. 1.4.0#840*
+[Info   : Unity Log] Saved file "20093303-5813-49f6-9e59-68c5279f3630.xml" (436496 bytes)
+[Info   : Unity Log] NetworkManagerSystem.desiredHost={ hostType=Self listen=False maxPlayers=4 }
+[Warning: Unity Log] The prefab 'SolusWingLogbookBody' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'ArenaMissionController' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'Moon2DropshipZone' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'HOLDER_ Gauntlets' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'VoidCamp' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'ChefWok' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'MeridianEventTriggerCore' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'ShrineHalcyonite' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'Access Codes Node' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'AffixCollectiveBodyAttachment' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'DroneCombinerStation' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'SolusWingHalos' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'SolusWingLogbookBody' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Warning: Unity Log] The prefab 'TripleDroneShop' has multiple NetworkIdentity components. There can only be one NetworkIdentity on a prefab, and it must be on the root object.
+[Error  : Unity Log] For iteration 0, out of 1
+[Info   : Unity Log] Adding local player controller 0 on connection hostId: -1 connectionId: 0 isReady: False channel count: 0
+[Info   : Unity Log] NetworkManagerSystem.AddPlayerInternal(conn=hostId: -1 connectionId: 0 isReady: False channel count: 0, playerControllerId=0, extraMessageReader=NetBuf sz:280 pos:280
+[Error  : Unity Log] A connection has already been set as ready. There can only be one.
+[Error  : Unity Log] For iteration 0, out of 1
+[Info   : Unity Log] Player 0 already added, aborting.
+[Info   : Unity Log] Could not load config /Config/server_pregame.cfg: Could not find file "S:\SteamLibrary\steamapps\common\Risk of Rain 2\Risk of Rain 2_Data\Config\server_pregame.cfg"
+[Info   : Unity Log] Attempting to generate PreGameVoteController for OldManLagz
+[Info   : Unity Log] Received vote from OldManLagz
+[Info   : Unity Log] Accepting vote from OldManLagz
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on CharacterSelectUIMain(Clone)
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on CharacterSelectUIMain(Clone)
+[Warning: Unity Log] Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+[Warning: Unity Log] Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+[Warning: Unity Log] Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+[Error  : Unity Log] Unable to set gate state for village: disableCrumblePath=False. Are you sure this gate exists in any of the scene's nodegraphs?
+[Error  : Unity Log] Unable to set gate state for village: disableCrumblePath=True. Are you sure this gate exists in any of the scene's nodegraphs?
+[Error  : Unity Log] For iteration 0, out of 1
+[Info   : Unity Log] Player 0 already added, aborting.
+[Info   : Unity Log] Spending 280 credits on interactables...
+[Info   : Unity Log] Risk of Rain 2 build: ver. 1.4.0#840*
+[Warning: Unity Log] Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+[Warning: Unity Log] Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+[Info   : Unity Log] NetworkManagerSystem.desiredHost={ hostType=None }
+[Error  : Unity Log] Origin clientchange
+[Info   : Unity Log] Saved file "20093303-5813-49f6-9e59-68c5279f3630.xml" (436496 bytes)
+[Warning: Unity Log] Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+[Warning: Unity Log] Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+[Error  : Unity Log] GenericPool: ReleasePools called on non-empty pool GenericPool<RoR2.EffectManagerHelper>
+[Error  : Unity Log] GenericPool: ReleasePools called on non-empty pool GenericPool<RoR2.EffectManagerHelper>
+[Error  : Unity Log] GenericPool: ReleasePools called on non-empty pool GenericPool<RoR2.EffectManagerHelper>
+[Error  : Unity Log] GenericPool: ReleasePools called on non-empty pool GenericPool<RoR2.EffectManagerHelper>
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on SettingsPanelTitle(Clone)
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on FooterContainer
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on FooterContainer
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on TitleMenu
+[Warning: Unity Log] InputSourceFilter.Refresh: Null eventSystem on TitleMenu
+[Info   : Unity Log] BaseMainMenuScreen: OnEnter()
+[Info   : Unity Log] Risk of Rain 2 build: ver. 1.4.0#840*
+[Info   : Unity Log] Saved file "20093303-5813-49f6-9e59-68c5279f3630.xml" (436496 bytes)
+[Error  : Unity Log] NullReferenceException
+Stack trace:
+UnityEngine.Component.GetComponent[T] () (at <a20b3695b7ce4017b7981f9d06962bd1>:0)
+RoR2.UI.LogBook.LogBookController.GetMonsterStatus (RoR2.UI.LogBook.Entry& entry, RoR2.UserProfile viewerProfile) (at <f06ee9a3ef5741e1a8136dd7fb5aa0d7>:0)
+RoR2.UI.LogBook.Entry.GetStatus (RoR2.UserProfile viewerProfile) (at <f06ee9a3ef5741e1a8136dd7fb5aa0d7>:0)
+RoR2.UI.LogBook.LogBookController+<>c__DisplayClass113_0.<RegisterViewables>g__Check|0 (RoR2.UserProfile viewerProfile) (at <f06ee9a3ef5741e1a8136dd7fb5aa0d7>:0)
+RoR2.ViewablesCatalog+Node.DefaultShouldShowUnviewedTest (RoR2.UserProfile userProfile) (at <f06ee9a3ef5741e1a8136dd7fb5aa0d7>:0)
+RoR2.ViewablesCatalog+Node.DefaultShouldShowUnviewedTest (RoR2.UserProfile userProfile) (at <f06ee9a3ef5741e1a8136dd7fb5aa0d7>:0)
+RoR2.UI.ViewableTag.Check () (at <f06ee9a3ef5741e1a8136dd7fb5aa0d7>:0)
+RoR2.UI.ViewableTag.Refresh () (at <f06ee9a3ef5741e1a8136dd7fb5aa0d7>:0)
+RoR2.UI.ViewableTag.OnDisable () (at <f06ee9a3ef5741e1a8136dd7fb5aa0d7>:0)
+
+[Info   :FixPluginTypesSerialization] Restored original AssemblyNames list
